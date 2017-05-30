@@ -1,0 +1,2529 @@
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+[    0.000000] Booting Linux on physical CPU 0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.4.110-WERITOS-MM-g68d6598 (weritos@Weritos-Android) (gcc version 4.7 (GCC) ) #2 SMP PREEMPT Sun Sep 18 02:39:35 YEKT 2016
+[    0.000000] CPU: ARMv7 Processor [410fc051] revision 1 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: QRD MSM8625 QRD5
+[    0.000000] meminfo.nr_banks = 2 
+[    0.000000] high_memory = 0x2cd00000 (virt: 0xecb00000) 
+[    0.000000] Reserve Persistent Ram at 0x35000000 , size = 0x200000 
+[    0.000000] MemBlock remove at 0x0fe00000, size: 0x8, ret = 0 
+[    0.000000] MemBlock remove at 0x29f00000, size: 0x2e00000, ret = 0 
+[    0.000000] memory pool 3 (start 29f00000 size 2e00000) initialized
+[    0.000000] MemBlock remove at 0x0fd00000, size: 0x20, ret = 0 
+[    0.000000] cma: CMA: reserved 36 MiB at 27800000
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] Initialized strongly ordered page successfully
+[    0.000000] smem_find(137, 80): wrong size 64
+[    0.000000] smem_find(137, 72): wrong size 64
+[    0.000000] socinfo_init v4, id=127, ver=1.0, raw_id=1907, raw_ver=0, hw_plat=162, hw_plat_ver=131072
+[    0.000000] L310 cache controller enabled
+[    0.000000] l2x0: 8 ways, CACHE_ID 0x410054c8, AUX_CTRL 0x30d60000, Cache size: 524288 B
+[    0.000000] Prfetch Ctrl: 0x74800003
+[    0.000000] bootmem_init: min = 512, max_low = 0x2cd00, max_high = 0x2cd00 
+[    0.000000] On node 0 totalpages: 171262
+[    0.000000] free_area_init_node: node 0, pgdat c0937880, node_mem_map c0c60000
+[    0.000000]   Normal zone: 1430 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 169832 pages, LIFO batch:31
+[    0.000000] allocating 6270976 bytes at c13c9000 (15c9000 physical) for fb
+[    0.000000] allocating 1244160 bytes at c19c4000 (1bc4000 physical) for v4l2
+[    0.000000] PERCPU: Embedded 9 pages/cpu @c1af6000 s15104 r8192 d13568 u36864
+[    0.000000] pcpu-alloc: s15104 r8192 d13568 u36864 alloc=9*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 169832
+[    0.000000] Kernel command line: androidboot.hardware=qcom androidboot.selinux=permissive batt_cap=0,4300,2800 hack_lcd=1 chg_hack_lcd=0 androidboot.emmc=true androidboot.serialno=MSM8225QRD5 androidboot.baseband=msm androidboot.mode=normal ctpid=1
+[    0.000000] get TouchPanel_id = 1
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 251MB 0MB 416MB = 668MB total
+[    0.000000] Memory: 620548k/620548k available, 111612k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xed000000 - 0xff000000   ( 288 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xecb00000   ( 715 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc086314c   (8557 kB)
+[    0.000000]       .init : 0xc0864000 - 0xc089fb00   ( 239 kB)
+[    0.000000]       .data : 0xc08a0000 - 0xc0956d50   ( 732 kB)
+[    0.000000]        .bss : 0xc0956d78 - 0xc0c5b718   (3091 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-0, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:645
+[    0.000000] sched_clock: 27 bits at 600kHz, resolution 1666ns, wraps every 223696ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.001451] Calibrating delay loop... 299.82 BogoMIPS (lpj=1499136)
+[    0.070181] pid_max: default: 32768 minimum: 301
+[    0.070539] Security Framework initialized
+[    0.070596] SELinux:  Initializing.
+[    0.070763] SELinux:  Starting in permissive mode
+[    0.070891] Mount-cache hash table entries: 512
+[    0.072608] Initializing cgroup subsys cpuacct
+[    0.072654] Initializing cgroup subsys devices
+[    0.072691] Initializing cgroup subsys freezer
+[    0.072728] Initializing cgroup subsys timer_slack
+[    0.072803] CPU: Testing write buffer coherency: ok
+[    0.073081] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.073183] hw perfevents: enabled with ARMv7 Cortex-A5 PMU driver, 3 counters available
+[    0.073354] Setting up static identity map for 0x814640 - 0x8146a4
+[    0.075131] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.075218] Brought up 2 CPUs
+[    0.075286] SMP: Total of 2 processors activated (599.65 BogoMIPS).
+[    0.080338] VFP support v0.3: implementor 41 architecture 2 part 30 variant 5 rev 1
+[    0.081414] dummy: 
+[    0.084209] NET: Registered protocol family 16
+[    0.087333] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.088173] gpiochip_add: registered GPIOs 0 to 15 on device: generic
+[    0.088316] gpiochip_add: registered GPIOs 16 to 42 on device: generic
+[    0.088446] gpiochip_add: registered GPIOs 43 to 67 on device: generic
+[    0.088568] gpiochip_add: registered GPIOs 68 to 94 on device: generic
+[    0.088689] gpiochip_add: registered GPIOs 95 to 106 on device: generic
+[    0.088823] gpiochip_add: registered GPIOs 107 to 132 on device: generic
+[    0.089971] Shared PLL control available.
+[    0.093246] acpuclk_7627_probe()
+[    0.093316] Dynamic reprogramming is ON
+[    0.094371] ACPU running at 600000 KHz
+[    0.094411] Id CPU-KHz PLL DIV AHB-KHz ADIV AXI-KHz D0 D1 D2 D4 U0 U1 U2 U4
+[    0.094469]  0   19200   5   1    2400    4   30720 -1 -1 -1 -1  3  1  4 -1
+[    0.094528]  1  245760   1   1   30720    4   61440 -1 -1 -1 -1  3 -1  4  5
+[    0.094584]  2  320000   0   3   40000    4  122880 -1  1 -1 -1  3 -1  4  5
+[    0.094641]  3  480000   0   2   60000    4  122880  2  1 -1 -1 -1 -1  4  6
+[    0.094699]  4  600000   2   2   75000    4  160000  2  1 -1 -1 -1 -1 -1  7
+[    0.094756]  5  700800   4   1   87500    4  160000  2  1  4 -1 -1 -1 -1  7
+[    0.094813]  6 1008000   4   1  126000    4  200000  3 -1  4  5 -1 -1 -1  7
+[    0.094871]  7 1152000   4   1  151200    4  200000 -1 -1  4  5 -1 -1 -1 -1
+[    0.094919] CPU0: 6 scaling frequencies supported.
+[    0.094956] CPU1: 6 scaling frequencies supported.
+[    0.095311] smps1: 1100 mV normal 
+[    0.095626] smps2: 1100 mV normal 
+[    0.095898] smps3: 1800 mV normal 
+[    0.096173] smps4: 2100 mV normal 
+[    0.096448] ldo01: 1800 <--> 2100 mV normal 
+[    0.096728] ldo02: 2850 mV normal 
+[    0.097008] ldo03: 1200 mV normal 
+[    0.097296] ldo04: 1100 mV normal 
+[    0.097573] ldo05: 1300 <--> 1350 mV normal 
+[    0.097859] ldo06: 1200 mV normal 
+[    0.098138] ldo07: 2600 mV normal 
+[    0.098424] ldo08: 2850 mV normal 
+[    0.098711] ldo09: 1800 mV normal 
+[    0.099001] ldo10: 1800 <--> 3000 mV normal 
+[    0.099289] ldo11: 1800 mV normal 
+[    0.099581] ldo12: 2850 mV normal 
+[    0.099869] ldo13: 2850 mV normal 
+[    0.100159] ldo14: 3300 mV normal 
+[    0.100511] ldo15: 1800 <--> 2850 mV normal 
+[    0.100798] ldo16: 1800 <--> 2850 mV normal 
+[    0.101109] ldo17: 2900 <--> 3300 mV normal 
+[    0.101396] ldo18: 2700 mV normal 
+[    0.101708] ldo19: 1200 <--> 1800 mV normal 
+[    0.102024] ncp: 1800 mV normal 
+[    0.103349] ext_2p85v: 
+[    0.103529] gpio_vreg_probe: id=35, name=ext_2p85v, gpio=35, gpio_label=ext_2p85v_en
+[    0.103829] ext_1p8v: 
+[    0.104016] gpio_vreg_probe: id=40, name=ext_1p8v, gpio=40, gpio_label=ext_1p8v_en
+[    0.104311] ext_3p3v: 
+[    0.104468] gpio_vreg_probe: id=12, name=ext_3p3v, gpio=12, gpio_label=ext_3p3v_en
+[    0.107143] smps3: Failed to create debugfs directory
+[    0.108521] platform bt_power.0: msm7627a_bt_power_init: set regulator bt min level to 3300000
+[    0.108588] i2c_register_board_info LTR558
+[    0.108621] i2c_register_board_info_mma8452
+[    0.108654] i2c_register_board_info YAMAHA SENSORS.
+[    0.109353] qrd7627a_add_io_devices: tp_id=1
+[    0.109931] hw-breakpoint: found 2 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.109994] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.112294] qup_i2c qup_i2c.0: No src_clk_rate specified in platfrom data
+[    0.112358] qup_i2c qup_i2c.0: Using default clock rate 19200000Hz
+[    0.112503] qup_i2c qup_i2c.0: clk_set_rate(core_clk, 19200000Hz):-22
+[    0.113428] qup_i2c qup_i2c.1: No src_clk_rate specified in platfrom data
+[    0.113484] qup_i2c qup_i2c.1: Using default clock rate 19200000Hz
+[    0.113619] qup_i2c qup_i2c.1: clk_set_rate(core_clk, 19200000Hz):-22
+[    0.113854] linxc gsbi1_quptable_i2c_gpio_config  adap_id=1, config_type=1
+[    0.114556] i2c i2c-1: Failed to register i2c client accelerometer at 0x38 (-16)
+[    0.114616] i2c i2c-1: Can't create device at 0x38
+[    0.116176] fs_gfx3d: normal 
+[    0.138429] bio: create slab <bio-0> at 0
+[    0.139368] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1343c8, irq:66
+[    0.139449] qup_i2c qup_i2c.0: I2C slave addr:0x22 not connected
+[    0.139511] sx150x 0-0022: i2c write fail: can't write 01 to 10: -107
+[    0.139574] sx150x: probe of 0-0022 failed with error -107
+[    0.140054] ION heap vmalloc created
+[    0.140109] ION heap camera_preview created at 0 with size 3c00000
+[    0.140181] ION heap audio created at 29f00000 with size 3a000
+[    0.140373] ION heap sf created at 29f3a000 with size 2d00000
+[    0.140904] SCSI subsystem initialized
+[    0.141278] usbcore: registered new interface driver usbfs
+[    0.141426] usbcore: registered new interface driver hub
+[    0.141634] usbcore: registered new device driver usb
+[    0.141876] Linux media interface: v0.10
+[    0.141996] Linux video capture interface: v2.00
+[    0.142416] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.143226] Bluetooth: Core ver 2.16
+[    0.143336] NET: Registered protocol family 31
+[    0.143373] Bluetooth: HCI device and connection manager initialized
+[    0.143421] Bluetooth: HCI socket layer initialized
+[    0.143459] Bluetooth: L2CAP socket layer initialized
+[    0.143739] Bluetooth: SCO socket layer initialized
+[    0.144686] Switching to clocksource dg_timer
+[    0.145304] Switched to NOHz mode on CPU #1
+[    0.150424] Switched to NOHz mode on CPU #0
+[    0.181069] NET: Registered protocol family 2
+[    0.199403] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.200283] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.203941] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    0.206958] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.207031] TCP: reno registered
+[    0.207094] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.207184] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.207869] NET: Registered protocol family 1
+[    0.208344] Unpacking initramfs...
+[    0.287728] Freeing initrd memory: 800K
+[    0.293429] Notify: smsm init
+[    0.293693] get_nand_partitions: no flash partition table in shared memory
+[    0.298698] rpcrouter_smd_remote_notify: smd opened 0x  (null)
+[    0.299068] [adsp.c:adsp_init] msm_adsp -- 0
+[    0.301406] rpcrouter: Server create rejected, version = 0, program = 3000003b
+[    0.314503] [audpp.c:audpp_probe] Number of decoder supported 5
+[    0.314564] [audpp.c:audpp_probe] Number of concurrency supported 8
+[    0.314609] [audpp.c:audpp_probe] module_name:AUDPLAY0TASK
+[    0.314649] [audpp.c:audpp_probe] queueid:13
+[    0.314683] [audpp.c:audpp_probe] decid:0
+[    0.314718] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.314813] [audpp.c:audpp_probe] module_name:AUDPLAY1TASK
+[    0.314856] [audpp.c:audpp_probe] queueid:14
+[    0.314891] [audpp.c:audpp_probe] decid:1
+[    0.314924] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.314963] [audpp.c:audpp_probe] module_name:AUDPLAY2TASK
+[    0.315003] [audpp.c:audpp_probe] queueid:15
+[    0.315036] [audpp.c:audpp_probe] decid:2
+[    0.315069] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.315108] [audpp.c:audpp_probe] module_name:AUDPLAY3TASK
+[    0.315148] [audpp.c:audpp_probe] queueid:16
+[    0.315181] [audpp.c:audpp_probe] decid:3
+[    0.315214] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.315253] [audpp.c:audpp_probe] module_name:AUDPLAY4TASK
+[    0.315293] [audpp.c:audpp_probe] queueid:17
+[    0.315328] [audpp.c:audpp_probe] decid:4
+[    0.315361] [audpp.c:audpp_probe] nr_codec_support:1
+[    0.316839] __msm_rpc_connect: server not found 30000002:20001
+[    0.318926] dma_test_init, minor number 35
+[    0.318971] WLAN power init
+[    0.319199] rmt_storage_get_ramfs: RAMFS entry: addr = 0x2cec0000, size = 0x00300000
+[    0.319261] rmt_storage_get_ramfs: RAMFS entry: addr = 0x2cdc0000, size = 0x00100000
+[    0.319596] rmt_storage_probe: Remote storage RPC client (0x300000a7)initialized
+[    0.326079] audit: initializing netlink socket (disabled)
+[    0.326216] type=2000 audit(0.330:1): initialized
+[    0.512263] fuse init (API version 7.18)
+[    0.513136] yaffs: yaffs built Sep 18 2016 02:25:17 Installing.
+[    0.513188] msgmni has been set to 1285
+[    0.513278] SELinux:  Registering netfilter hooks
+[    0.516573] io scheduler bfq registered
+[    0.516616] BFQ I/O-scheduler: v7r8
+[    0.516681] io scheduler cfq registered (default)
+[    0.516728] io scheduler deadline registered
+[    0.516778] io scheduler fiops registered
+[    0.516813] io scheduler noop registered
+[    0.516846] io scheduler row registered
+[    0.516879] io scheduler sio registered
+[    0.516913] io scheduler sioplus registered
+[    0.516948] io scheduler vr registered
+[    0.516981] io scheduler zen registered
+[    0.519033] mipi_dsi base phy_addr = 0xa1100000 virt = 0xed200000
+[    0.519128] linxc: msm_fb_dsi_client_I6_reset 
+[    0.519311] msm_fb_detect_panel: name = "mipi_video_novatek_sharp_qhd"
+[    0.519361] msm_fb_detect_panel: name = "mipi_cmd_novatek_sharp_qhd"
+[    0.519406] msm_fb_detect_panel: name = "mipi_video_novatek_nt35516_qhd"
+[    0.519453] msm_fb_detect_panel: name = "mipi_cmd_novatek_nt35516_qhd"
+[    0.519496] I6_mipi_panel_is_novatek_nt35516
+[    0.519619] I6_mipi_panel_is_novatek_nt35516: is_nt35516 = 1
+[    0.519663] I6 LCD is cmd novatek nt35516
+[    0.519696] mipi_novatek_nt35516_qhd_device_register
+[    0.519809] mipi_novatek_nt35516_qhd_lcd_probe
+[    0.520114] mipi_novatek_nt35516_qhd_lcd_probe
+[    0.520133] setting pdata->panel_info.fb_num to 3. type: 9
+[    0.520348] DSI_TWO_LANES
+[    0.531358] FrameBuffer[0] 540x960 size=6266880 bytes is registered successfully!
+[    0.531786] Registered led device: lcd-backlight
+[    0.532119] msm_serial: detected port #0
+[    0.532273] msm_serial.0: ttyMSM0 at MMIO 0xa9a00000 (irq = 41) is a MSM
+[    0.532776] msm_serial: driver initialized
+[    0.533759] msm_serial_hs.0: ttyHS0 at MMIO 0xa0200000 (irq = 77) is a MSM HS UART
+[    0.534151] msm_serial_hs module loaded
+[    0.535691] diagchar initialized now
+[    0.539743] kgsl kgsl-3d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+[    0.546968] loop: module loaded
+[    0.547838] zram: Created 1 device(s) ...
+[    0.765728] SCSI Media Changer driver v0.25 
+[    0.767043] msm_nand_probe: phys addr 0xa0a00000 
+[    0.767089] msm_nand_probe: Dual Nand Ctrl in ping-pong mode
+[    0.767133] msm_nand_probe: dmac 0x7
+[    0.767636] msm_nand_probe: allocated dma buffer at e7646000, dma_addr 27846000
+[    0.767876] flash_onfi_probe: No partition info available
+[    0.768041] status: 20
+[    0.768074] nandid: 20202020 maker 20 device 20
+[    0.768116] ERROR: unknown nand device manuf=20 devid=20
+[    0.768209] SFLASHC Async Mode bit: 0 
+[    0.768314] =================================================================
+[    0.768366] flash_onenand_probe: manufacturer_id = 0xf000
+[    0.768404] flash_onenand_probe: device_id = 0xf001
+[    0.768441] flash_onenand_probe: version_id = 0xf002
+[    0.768479] flash_onenand_probe: data_buf_size = 0xf003
+[    0.768518] flash_onenand_probe: boot_buf_size = 0xf004
+[    0.768554] flash_onenand_probe: num_of_buffers = 0xf005
+[    0.768593] flash_onenand_probe: technology = 0xf006
+[    0.768629] =================================================================
+[    0.768674] flash_onenand_probe: Detected an unsupported device
+[    0.768714] msm_nand_probe: No nand device found
+[    0.768941] tun: Universal TUN/TAP device driver, 1.6
+[    0.768984] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.769174] rmnet_init: SMD devices[8]
+[    0.776093] PPP generic driver version 2.4.2
+[    0.776329] PPP BSD Compression module registered
+[    0.776368] PPP Deflate Compression module registered
+[    0.777553] PPP MPPE Compression module registered
+[    0.777606] NET: Registered protocol family 24
+[    0.778543] __msm_rpc_connect: server not found 3000001a:40001
+[    0.778598] __msm_rpc_connect: server not found 3000001a:30001
+[    0.778641] __msm_rpc_connect: server not found 3000001a:20001
+[    0.778951] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.779163] host driver registered w/ tranceiver
+[    0.779418] usbcore: registered new interface driver cdc_acm
+[    0.779461] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.779518] Initializing USB Mass Storage driver...
+[    0.779651] usbcore: registered new interface driver usb-storage
+[    0.779693] USB Mass Storage support registered.
+[    0.779784] usbcore: registered new interface driver ums-alauda
+[    0.779881] usbcore: registered new interface driver ums-cypress
+[    0.779978] usbcore: registered new interface driver ums-datafab
+[    0.780074] usbcore: registered new interface driver ums-freecom
+[    0.780186] usbcore: registered new interface driver ums-isd200
+[    0.780286] usbcore: registered new interface driver ums-jumpshot
+[    0.780384] usbcore: registered new interface driver ums-karma
+[    0.780479] usbcore: registered new interface driver ums-onetouch
+[    0.780578] usbcore: registered new interface driver ums-sddr09
+[    0.780674] usbcore: registered new interface driver ums-sddr55
+[    0.780771] usbcore: registered new interface driver ums-usbat
+[    0.780879] usbcore: registered new interface driver usb_ehset_test
+[    0.782114] peripheral driver registered w/ tranceiver
+[    0.782943] mbim_init: initialize 1 instances
+[    0.783129] mbim_init: Initialized 1 ports
+[    0.786064] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    0.786123] android_usb gadget: Number of LUNs=3
+[    0.786164]  lun0: LUN: removable read only CD-ROM file: (no medium)
+[    0.786211]  lun1: LUN: removable file: (no medium)
+[    0.786249]  lun2: LUN: removable file: (no medium)
+[    0.786611] android_usb gadget: android_usb ready
+[    0.787244] [elan] elan_ktf2k_ts_init: driver version 0x0003: Integrated 2 and 5 fingers together and auto-mapping resolution
+[    0.787373] lcd_elan_ktf2k_power_onoff: on = 1
+[    0.787454] lcd_elan_ktf2k_power_onoff: 'ext_2v8' regulator not found, rc=-517
+[    1.005014] msm_otg_suspend: usb in low power mode
+[    1.455746] [elan]__hello_packet_handler: hello packet 55:55:55:55:ff:FF:ff:ff
+[    1.455804] [elan] hellopacket's rc = 0
+[    1.550019] [elan] __fw_packet_handler: firmware version: 0x0020
+[    1.550068] [elan] __fw_packet_handler: firmware ID: 0x1190
+[    1.550109] [elan] __fw_packet_handler: x resolution: 640, y resolution: 1280
+[    1.550156] [elan] elan_ktf2k_ts_setup: firmware checking done.
+[    1.550204] [ELAN] RESOLUTION: 640 x 1280 
+[    1.550591] input: elan-touchscreen as /devices/virtual/input/input0
+[    1.551051] [ELAN] misc_register finished!!
+[    1.551089] [ELAN] misc_register finished!!
+[    1.551131] [ELAN] FW_ID=0x1190, New_FW_ID=0x1190 
+[    1.551168] [ELAN] FW_VERSION=0x20, New_FW_VER=0x20 
+[    1.551211] [ELAN] start iap update end
+[    1.551244] lcd_elan_ktf2k_power_onoff: on = 0
+[    1.551304] lcd_elan_ktf2k_power_onoff: 'ext_2v8' regulator not found, rc=-517
+[    1.551358] [ELAN] elan_ktf2k_ts_probe: end!
+[    1.551511] gpio_request: gpio-26 (ft5306 RST GPIO) status -16
+[    1.551529] ft5306_ts_platform_init Failed to request GPIO 26
+[    1.594946] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[    1.595026] qup_i2c qup_i2c.1: I2C slave addr:0x38 not connected
+[    1.595078] ft5306_i2c_read_value:i2c_transfer failed!
+[    1.595114] Read chip id failed!Maybe have not connected device!
+[    1.595491] GPIO Matrix Keypad Driver: Start keypad matrix for 7x27a_kp in interrupt mode
+[    1.595901] input: 7x27a_kp as /devices/virtual/input/input1
+[    1.698241] input: mma8452 as /devices/virtual/input/input2
+[    1.698509] ltr558_probe: int gpio is 17, irq is 273
+[    2.312978] input: ltr558 as /devices/virtual/input/input3
+[    2.313174] ltr558_probe: succeed
+[    2.313308] i2c-core: driver [accelerometer] using legacy suspend method
+[    2.313354] i2c-core: driver [accelerometer] using legacy resume method
+[    2.313718] input: geomagnetic as /devices/platform/qup_i2c.1/i2c-1/1-002e/input/input4
+[    2.314223] input: geomagnetic_raw as /devices/platform/qup_i2c.1/i2c-1/1-002e/input/input5
+[    2.314451] yas_term
+[    2.314479] yas_term_nolock
+[    2.314508] yas_init
+[    2.314531] yas_init_nolock IN
+[    2.314564] yas_init_nolock OUT
+[    2.314591] yas_set_position
+[    2.314619] yas_set_position[7] OUT
+[    2.314649] yas_get_offset
+[    2.314676] yas_get_offset[0] OUT
+[    2.314703] yas_get_delay
+[    2.314731] yas_get_delay[200] OUT
+[    2.314796] yas_set_filter_enable IN
+[    2.314829] yas_set_filter_enable OUT
+[    2.314859] yas_get_filter
+[    2.314886] yas_get_filter[0] OUT
+[    2.314914] yas_get_static_matrix
+[    2.314944] yas_get_static_matrix[0] OUT
+[    2.314974] yas_get_dynamic_matrix
+[    2.315004] yas_get_dynamic_matrix[0] OUT
+[    2.315083] i2c-core: driver [geomagnetic] using legacy suspend method
+[    2.315129] i2c-core: driver [geomagnetic] using legacy resume method
+[    2.315779] input: orientation as /devices/virtual/input/input6
+[    2.318601] RPC CALL -- TOD TIME UPDATE: ttick = 313885
+[    2.318611] stamp=60722183206371328, freq = 33228533
+[    2.318689] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    2.319951] using rtc device, msm_rtc, for alarms
+[    2.320023] rs30000048 rs30000048.262144: rtc core: registered msm_rtc as rtc0
+[    2.320904] rs30000048 rs30000048.262144: rtc core: registered msm_rtc_secure as rtc1
+[    2.321049] i2c /dev entries driver
+[    2.322494] 
+[    2.322501]  in ov8825_sensor_i2c_probe
+[    2.322553] msm_sensor_i2c_probe ov8825_i2c_probe called
+[    2.322594] ov8825_sensor_power_up IN
+[    2.322628] ov8825_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[    2.328733] msm_sensor_power_up: 613
+[    2.405544] msm_sensor id: 0x8825
+[    2.405779] msm_eeprom_probe probe_fail
+[    2.406298] msm_sensor_register mctl_node_name[0] = video1
+[    2.406353] ov8825_sensor_power_down IN
+[    2.459939] msm_sensor_power_down
+[    2.504943] ov5647_sensor_i2c_probe IN
+[    2.504981] msm_sensor_i2c_probe ov5647_i2c_probe called
+[    2.505021] ov5647_sensor_power_up IN
+[    2.505054] ov5647_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[    2.517171] msm_sensor_power_up: 613
+[    2.554941] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.555021] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.555074] msm_sensor_match_id: ov5647: read id failed
+[    2.555114] msm_sensor_i2c_probe ov5647_i2c_probe failed
+[    2.555151] ov5647_sensor_power_down IN
+[    2.555303] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.555378] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.604929] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1343c8, irq:66
+[    2.605006] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.605054] ov5647_sensor_power_down: -107
+[    2.605208] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1343c8, irq:66
+[    2.605281] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.659938] msm_sensor_power_down
+[    2.704834] camera_af_software_powerdown IN...
+[    2.704874] SKUA AF Motor software powerdown, write i2c saddr:0x18, waddr:0x80, wdata:0x00
+[    2.705053] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.705128] qup_i2c qup_i2c.0: I2C slave addr:0xc not connected
+[    2.705176] AF software powerdown faild
+[    2.710356] ov5647: probe of 0-006c failed with error -107
+[    2.711796] I2C radio driver for Qualcomm FM Radio Transceiver , Version 1.0.0
+[    2.712331] BATT: msm_battery_init, enter
+[    2.712583] BATT: msm_battery_init_rpc, rpc version charger=0x00010001, battery=0x00050001
+[    2.712683] BATT: msm_battery_probe, enter
+[    2.715514] BATT: msm_battery_probe, exit
+[    2.715533] BATT: msm_battery_update_psy_status
+[    2.715678] BATT: msm_battery_init, exit
+[    2.716238] BATT: received, 2, 0, 0x0; 0, 4174, 96, 250; 0, 0, 0
+[    2.716924] msm_adc successfully registered
+[    2.716969] msm_adc successfully registered
+[    2.718138] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    2.718226] Bluetooth: HCI UART driver ver 2.2
+[    2.718264] Bluetooth: HCI H4 protocol initialized
+[    2.718299] Bluetooth: HCILL protocol initialized
+[    2.718334] Bluetooth: HCI_IBS protocol initialized
+[    2.718371] ibs_init: HCI_IBS protocol registration failed
+[    2.718409] Bluetooth: MSM Sleep Mode Driver Ver 1.1
+[    2.720414] mmc0: SDCC Version: 0x00000000
+[    2.720638] mmc0: No card detect facilities available
+[    2.722499] mmc0: Qualcomm MSM SDCC-core at 0x00000000a0600000 irq 80,0 dma 7 dmacrcri 12
+[    2.722563] mmc0: Controller capabilities: 0x00000001
+[    2.722599] mmc0: 8 bit data mode enabled
+[    2.722633] mmc0: 4 bit data mode disabled
+[    2.722666] mmc0: polling status mode disabled
+[    2.722703] mmc0: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    2.722746] mmc0: Slot eject status = 0
+[    2.722778] mmc0: Power save feature enable = 1
+[    2.722818] mmc0: DM non-cached buffer at e7660000, dma_addr 0x27860000
+[    2.722863] mmc0: DM cmd busaddr 0x27860000, cmdptr busaddr 0x27877f40
+[    2.723888] mmc1: SDCC Version: 0x00000000
+[    2.724121] mmc1: No card detect facilities available
+[    2.725564] mmc1: Qualcomm MSM SDCC-core at 0x00000000a0400000 irq 56,0 dma 8 dmacrcri 6
+[    2.725626] mmc1: Controller capabilities: 0x00000001
+[    2.725664] mmc1: 8 bit data mode disabled
+[    2.725698] mmc1: 4 bit data mode enabled
+[    2.725729] mmc1: polling status mode disabled
+[    2.725768] mmc1: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    2.725809] mmc1: Slot eject status = 0
+[    2.725841] mmc1: Power save feature enable = 1
+[    2.725879] mmc1: DM non-cached buffer at e76c0000, dma_addr 0x278c0000
+[    2.725926] mmc1: DM cmd busaddr 0x278c0000, cmdptr busaddr 0x278d7f40
+[    2.726901] mmc2: SDCC Version: 0x00000000
+[    2.727194] mmc2: No card detect facilities available
+[    2.728661] mmc2: Qualcomm MSM SDCC-core at 0x00000000a0500000 irq 58,0 dma 5 dmacrcri 7
+[    2.728723] mmc2: Controller capabilities: 0x00000001
+[    2.728759] mmc2: 8 bit data mode disabled
+[    2.728793] mmc2: 4 bit data mode enabled
+[    2.728824] mmc2: polling status mode disabled
+[    2.728863] mmc2: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    2.728904] mmc2: Slot eject status = 0
+[    2.728936] mmc2: Power save feature enable = 1
+[    2.728974] mmc2: DM non-cached buffer at e76e0000, dma_addr 0x278e0000
+[    2.729021] mmc2: DM cmd busaddr 0x278e0000, cmdptr busaddr 0x278f7f40
+[    2.729414] Registered led device: button-backlight
+[    2.729741] tricolor_leds_backlight_init: module init
+[    2.729859] tricolor leds and flashlight: probe init 
+[    2.730213] Registered led device: red
+[    2.730334] Registered led device: green
+[    2.730453] Registered led device: blue
+[    2.730564] Registered led device: flashlight
+[    2.731446] usbcore: registered new interface driver usbhid
+[    2.731493] usbhid: USB HID core driver
+[    2.732306] ashmem: initialized
+[    2.732468] logger: created 64K log 'log_main'
+[    2.732614] logger: created 64K log 'log_events'
+[    2.732771] logger: created 64K log 'log_radio'
+[    2.732918] logger: created 64K log 'log_system'
+[    2.734118] msm-codec-dai msm-codec-dai.0: asoc_msm_codec_probe: dev name msm-codec-dai.0
+[    2.735254] msm_soc: ALSA MSM Mixer Setting
+[    2.736616] asoc: msm-codec-dai <-> msm-cpu-dai.0 mapping ok
+[    2.737646] __msm_rpc_connect: server not found 30000002:20001
+[    2.737696] msm_snd_rpc_connect failed (compatible VERS = 131073) 				 trying again with another API
+[    2.738104] oprofile: using arm/armv7
+[    2.738296] Netfilter messages via NETLINK v0.30.
+[    2.738459] nf_conntrack version 0.5.0 (10284 buckets, 41136 max)
+[    2.739464] ctnetlink v0.93: registering with nfnetlink.
+[    2.739578] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    2.739626] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    2.739973] xt_time: kernel timezone is -0000
+[    2.740298] IPv4 over IPv4 tunneling driver
+[    2.741563] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.742019] arp_tables: (C) 2002 David S. Miller
+[    2.742161] TCP: cubic registered
+[    2.742194] TCP: westwood registered
+[    2.742226] TCP: vegas registered
+[    2.742254] TCP: veno registered
+[    2.742283] Initializing XFRM netlink socket
+[    2.743338] NET: Registered protocol family 10
+[    2.750264] Mobile IPv6
+[    2.750354] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.750771] IPv6 over IPv4 tunneling driver
+[    2.753019] NET: Registered protocol family 17
+[    2.753108] NET: Registered protocol family 15
+[    2.753419] Bluetooth: RFCOMM TTY layer initialized
+[    2.753484] Bluetooth: RFCOMM socket layer initialized
+[    2.753524] Bluetooth: RFCOMM ver 1.11
+[    2.753634] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    2.753676] Bluetooth: BNEP filters: protocol multicast
+[    2.753716] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    2.753923] L2TP core driver, V2.0
+[    2.753983] PPPoL2TP kernel driver, V2.0
+[    2.754018] L2TP IP encapsulation support (L2TPv3)
+[    2.754083] L2TP netlink interface
+[    2.754148] L2TP ethernet pseudowire support (L2TPv3)
+[    2.754216] L2TP debugfs support
+[    2.755128] ThumbEE CPU extension supported.
+[    2.755178] Registering SWP/SWPB emulation handler
+[    2.760398] clock_late_init: Removing enables held for handed-off clocks
+[    2.764353] cpufreq: cpu0 init at 600000 switching to 480000
+[    2.764718] cpufreq_interactive_input_connect: connect to elan-touchscreen
+[    2.766858] input: 7k_handset as /devices/virtual/input/input7
+[    2.772689] rs30000048 rs30000048.262144: setting system clock to 2016-09-17 21:42:39 UTC (1474148559)
+[    2.773648] ALSA device list:
+[    2.773699]   #0: msm-audio
+[    2.774696] Freeing init memory: 236K
+[    2.778514] init: init started!
+[    2.790364] SELinux: 2048 avtab hash slots, 5136 rules.
+[    2.795759] SELinux: 2048 avtab hash slots, 5136 rules.
+[    2.795799] SELinux:  1 users, 2 roles, 557 types, 0 bools, 1 sens, 1024 cats
+[    2.795821] SELinux:  87 classes, 5136 rules
+[    2.799216] SELinux:  Completing initialization.
+[    2.799233] SELinux:  Setting up existing superblocks.
+[    2.799279] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+[    2.799318] SELinux: initialized (dev rootfs, type rootfs), uses genfs_contexts
+[    2.799411] SELinux: initialized (dev bdev, type bdev), not configured for labeling
+[    2.799449] SELinux: initialized (dev proc, type proc), uses genfs_contexts
+[    2.799501] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    2.799551] SELinux: initialized (dev debugfs, type debugfs), uses genfs_contexts
+[    2.804383] SELinux: initialized (dev sockfs, type sockfs), uses task SIDs
+[    2.804418] SELinux: initialized (dev pipefs, type pipefs), uses task SIDs
+[    2.804448] SELinux: initialized (dev anon_inodefs, type anon_inodefs), not configured for labeling
+[    2.804481] SELinux: initialized (dev devpts, type devpts), uses transition SIDs
+[    2.804536] SELinux: initialized (dev selinuxfs, type selinuxfs), uses genfs_contexts
+[    2.804639] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    2.804693] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+[    2.814368] mmc0: new high speed MMC card at address 0001
+[    2.815018] mmcblk0: mmc0:0001 SEM04G 3.68 GiB 
+[    2.817756]  mmcblk0: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 >
+[    2.898584] mmc1: host does not support reading read-only switch. assuming write-enable.
+[    2.903634] mmc1: new high speed SDHC card at address b368
+[    2.904079] mmcblk1: mmc1:b368 NCard 14.8 GiB 
+[    2.905689]  mmcblk1: p1
+[    3.000876] type=1403 audit(1474148559.720:2): policy loaded auid=4294967295 ses=4294967295
+[    3.001634] init: (Initializing SELinux non-enforcing took 0.22s.)
+[    3.017478] init: init second stage started!
+[    3.074258] init: waitpid failed: No child processes
+[    3.074681] init: (Loading properties from /default.prop took 0.00s.)
+[    3.077191] init: (Parsing /init.environ.rc took 0.00s.)
+[    3.077613] init: (Parsing /init.usb.rc took 0.00s.)
+[    3.078799] init: (Parsing init.target.rc took 0.00s.)
+[    3.079214] init: (Parsing init.qcom.usb.rc took 0.00s.)
+[    3.079259] init: (Parsing /init.qcom.rc took 0.00s.)
+[    3.079824] init: (Parsing /init.usb.configfs.rc took 0.00s.)
+[    3.079946] init: (Parsing /init.zygote32.rc took 0.00s.)
+[    3.080109] init: (Parsing /init.trace.rc took 0.00s.)
+[    3.080776] init: (Parsing /init.superuser.rc took 0.00s.)
+[    3.080821] init: (Parsing /init.cm.rc took 0.00s.)
+[    3.080858] init: (Parsing /init.rc took 0.01s.)
+[    3.081099] init: SELinux: Could not get canonical path /adb_keys restorecon: No such file or directory.
+[    3.081414] init: Starting service 'ueventd'...
+[    3.082054] type=1400 audit(1474148559.800:3): avc:  denied  { mounton } for  pid=1 comm="init" path="/sys/kernel/debug" dev="debugfs" ino=1 scontext=u:r:init:s0 tcontext=u:object_r:debugfs:s0 tclass=dir permissive=1
+[    3.082793] init: Waiting for /dev/.coldboot_done...
+[    3.083516] ueventd: ueventd started!
+[    3.401148] ueventd: Coldboot took 0.31s.
+[    3.406201] init: Waiting for /dev/.coldboot_done took 0.32s.
+[    3.406323] init: /dev/hw_random not found
+[    3.406406] init: could not open /dev/keychord: No such file or directory
+[    3.444938] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+[    3.445539] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    3.447349] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    3.451319] init: write_file: Unable to open '/proc/sys/kernel/sched_tunable_scaling': No such file or directory
+[    3.451411] init: write_file: Unable to open '/proc/sys/kernel/sched_latency_ns': No such file or directory
+[    3.451486] init: write_file: Unable to open '/proc/sys/kernel/sched_wakeup_granularity_ns': No such file or directory
+[    3.451559] init: write_file: Unable to open '/proc/sys/kernel/sched_compat_yield': No such file or directory
+[    3.452188] init: write_file: Unable to open '/proc/sys/net/ipv4/fwmark_reflect': No such file or directory
+[    3.452288] init: write_file: Unable to open '/proc/sys/net/ipv6/fwmark_reflect': No such file or directory
+[    3.452366] init: write_file: Unable to open '/proc/sys/net/ipv4/tcp_fwmark_accept': No such file or directory
+[    3.484946] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+[    3.485203] init: write_file: Unable to write to '/dev/cpuctl/cpu.shares': Invalid argument
+[    3.486196] type=1400 audit(1474148560.200:4): avc:  denied  { module_request } for  pid=1 comm="init" kmod="cpuset" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    3.489009] init: write_file: Unable to open '/proc/sys/abi/swp': No such file or directory
+[    3.489489] type=1400 audit(1474148560.200:5): avc:  denied  { create } for  pid=1 comm="init" name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+[    3.489679] init: write_file: Unable to open '/sys/module/msm_fb/parameters/align_buffer': No such file or directory
+[    3.490716] init: /dev/hw_random not found
+[    3.498781] EXT4-fs (mmcblk0p15): Ignoring removed nomblk_io_submit option
+[    3.519553] EXT4-fs (mmcblk0p15): recovery complete
+[    3.520528] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.520628] SELinux: initialized (dev mmcblk0p15, type ext4), uses xattr
+[    3.520836] fs_mgr: check_fs(): mount(/dev/block/mmcblk0p15,/cache,ext4)=0: Success
+[    3.574854] fs_mgr: check_fs(): unmount(/cache) succeeded
+[    3.574981] fs_mgr: Not running /system/bin/e2fsck on /dev/block/mmcblk0p15 (executable not in system image)
+[    3.584338] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: barrier=1
+[    3.584426] SELinux: initialized (dev mmcblk0p15, type ext4), uses xattr
+[    3.584538] fs_mgr: __mount(source=/dev/block/mmcblk0p15,target=/cache,type=ext4)=0
+[    3.593326] EXT4-fs (mmcblk0p14): mounted filesystem with ordered data mode. Opts: barrier=1
+[    3.593408] SELinux: initialized (dev mmcblk0p14, type ext4), uses xattr
+[    3.593498] fs_mgr: __mount(source=/dev/block/mmcblk0p14,target=/persist,type=ext4)=0
+[    3.601723] EXT4-fs (mmcblk0p12): mounted filesystem with ordered data mode. Opts: barrier=1
+[    3.601806] SELinux: initialized (dev mmcblk0p12, type ext4), uses xattr
+[    3.601938] fs_mgr: __mount(source=/dev/block/mmcblk0p12,target=/system,type=ext4)=0
+[    3.613603] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    3.621791] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.621854] SELinux: initialized (dev mmcblk0p13, type ext4), uses xattr
+[    3.621953] fs_mgr: check_fs(): mount(/dev/block/mmcblk0p13,/data,ext4)=0: Success
+[    3.664824] fs_mgr: check_fs(): unmount(/data) succeeded
+[    3.670589] fs_mgr: Running /system/bin/e2fsck on /dev/block/mmcblk0p13
+[    3.764268] type=1400 audit(1474148560.470:6): avc:  denied  { read } for  pid=122 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4439 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.764374] type=1400 audit(1474148560.470:7): avc:  denied  { open } for  pid=122 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4439 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.764544] type=1400 audit(1474148560.470:8): avc:  denied  { write } for  pid=122 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4439 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.764679] type=1400 audit(1474148560.470:9): avc:  denied  { ioctl } for  pid=122 comm="e2fsck" path="/dev/block/mmcblk0p13" dev="tmpfs" ino=4439 ioctlcmd=127c scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.778916] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    3.778923] 
+[    3.779014] e2fsck: /dev/block/mmcblk0p13: clean, 8227/161600 files, 467126/645884 blocks
+[    3.779021] 
+[    3.788246] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,barrier=1
+[    3.788313] SELinux: initialized (dev mmcblk0p13, type ext4), uses xattr
+[    3.788418] fs_mgr: __mount(source=/dev/block/mmcblk0p13,target=/data,type=ext4)=0
+[    3.789801] zram0: detected capacity change from 0 to 104857600
+[    3.830061] type=1400 audit(1474148560.540:10): avc:  denied  { read write } for  pid=125 comm="mkswap" name="zram0" dev="tmpfs" ino=4286 scontext=u:r:toolbox:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.830756] random: mkswap urandom read with 14 bits of entropy available
+[    3.835409] Adding 102396k swap on /dev/block/zram0.  Priority:-1 extents:1 across:102396k SS
+[    3.837298] init: Starting service 'logd'...
+[    3.871101] init: (Loading properties from /system/build.prop took 0.02s.)
+[    3.871231] init: (Loading properties from /vendor/build.prop took 0.00s.)
+[    3.871298] init: (Loading properties from /factory/factory.prop took 0.00s.)
+[    3.876266] init: Starting service 'vold'...
+[    3.881603] init: Not bootcharting.
+[    3.908556] logd.auditd: start
+[    3.908636] logd.klogd: 3913851668
+[    4.516371] init: Starting service 'exec 0 (/system/bin/tzdatacheck)'...
+[    4.537566] init: Service 'exec 0 (/system/bin/tzdatacheck)' (pid 139) exited with status 0
+[    4.542424] init: Starting service 'sysinit'...
+[    4.543456] init: (Loading properties from /data/local.prop took 0.00s.)
+[    5.519841] init: Service 'sysinit' (pid 140) exited with status 0
+[    5.520369] init: Starting service 'logd-reinit'...
+[    5.526801] init: Starting service 'healthd'...
+[    5.528371] init: Starting service 'lmkd'...
+[    5.529528] init: Starting service 'servicemanager'...
+[    5.530664] init: Starting service 'surfaceflinger'...
+[    5.531733] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[    5.531789] init: Starting service 'rmt_oeminfo'...
+[    5.532798] init: Warning!  Service rmt_storage needs a SELinux domain defined; please fix!
+[    5.532856] init: Starting service 'rmt_storage'...
+[    5.538649] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio0/accept_ra': No such file or directory
+[    5.538774] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio1/accept_ra': No such file or directory
+[    5.538863] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio2/accept_ra': No such file or directory
+[    5.538946] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio3/accept_ra': No such file or directory
+[    5.539031] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio4/accept_ra': No such file or directory
+[    5.539114] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio5/accept_ra': No such file or directory
+[    5.539198] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio6/accept_ra': No such file or directory
+[    5.539279] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio7/accept_ra': No such file or directory
+[    5.552104] type=1400 audit(1474148562.250:13): avc: denied { execute_no_trans } for pid=159 comm="init" path="/system/bin/rmt_storage" dev="mmcblk0p12" ino=23447 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    5.566836] init: write_file: Unable to open '/sys/devices/system/cpu/cpufreq/ondemand/sampling_rate': No such file or directory
+[    5.566961] init: write_file: Unable to open '/sys/devices/system/cpu/cpufreq/ondemand/up_threshold': No such file or directory
+[    5.567294] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[    5.567329] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[    5.567349] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[    5.567371] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[    5.567391] lowmemorykiller: oom_adj 4 => oom_score_adj 235
+[    5.567413] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[    5.567433] lowmemorykiller: oom_adj 12 => oom_score_adj 705
+[    5.567776] init: write_file: Unable to open '/proc/sys/vm/extra_free_kbytes': No such file or directory
+[    5.575488] init: write_file: Unable to open '/proc/sys/kernel/sysrq': No such file or directory
+[    5.575923] init: Starting service 'sysinit'...
+[    5.623793] init: SELinux: Could not get canonical path /sys/block/sda/queue/scheduler restorecon: No such file or directory.
+[    5.623964] init: SELinux: Could not get canonical path /sys/block/sde/queue/scheduler restorecon: No such file or directory.
+[    5.624096] init: SELinux: Could not get canonical path /sys/block/dm-0/queue/scheduler restorecon: No such file or directory.
+[    5.626543] logd.daemon: reinit
+[    5.631499] rmt_storage (159): /proc/159/oom_adj is deprecated, please use /proc/159/oom_score_adj instead.
+[    5.638686] init: Service 'logd-reinit' (pid 153) exited with status 0
+[    5.644219] init: Starting service 'console'...
+[    5.650048] init: Starting service 'adbd'...
+[    5.657608] init: Starting service 'netd'...
+[    5.660784] init: Starting service 'debuggerd'...
+[    5.661724] init: cannot find '/system/bin/debuggerd64', disabling 'debuggerd64'
+[    5.670304] init: Starting service 'ril-daemon'...
+[    5.672278] init: Starting service 'drm'...
+[    5.673593] init: Starting service 'media'...
+[    5.677926] type=1400 audit(1474148562.260:14): avc: denied { execmod } for pid=159 comm="rmt_storage" path="/system/bin/rmt_storage" dev="mmcblk0p12" ino=23447 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    5.688068] init: Starting service 'installd'...
+[    5.689336] init: Starting service 'keystore'...
+[    5.690376] init: Starting service 'ril-daemon2'...
+[    5.691481] init: Warning!  Service hwmac needs a SELinux domain defined; please fix!
+[    5.691543] init: Starting service 'hwmac'...
+[    5.692551] init: Warning!  Service netmgrd needs a SELinux domain defined; please fix!
+[    5.692606] init: Starting service 'netmgrd'...
+[    5.693516] init: Warning!  Service oem_rpc_svc needs a SELinux domain defined; please fix!
+[    5.693568] init: Starting service 'oem_rpc_svc'...
+[    5.694444] init: Warning!  Service qmuxd needs a SELinux domain defined; please fix!
+[    5.694498] init: Starting service 'qmuxd'...
+[    5.698578] adb_open
+[    5.723076] init: Warning!  Service sensord needs a SELinux domain defined; please fix!
+[    5.723139] init: Starting service 'sensord'...
+[    5.758034] init: Warning!  Service orientationd needs a SELinux domain defined; please fix!
+[    5.758101] init: Starting service 'orientationd'...
+[    5.759164] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[    5.759234] init: Starting service 'geomagneticd'...
+[    5.782313] init: Warning!  Service wlan_detect needs a SELinux domain defined; please fix!
+[    5.782378] init: Starting service 'wlan_detect'...
+[    5.815133] init: Starting service 'zygote'...
+[    5.826178] init: Service 'rmt_oeminfo' (pid 158) exited with status 255
+[    5.826249] init: Service 'rmt_oeminfo' (pid 158) killing any children in process group
+[    5.837398] init: Service 'geomagneticd' (pid 181) exited with status 1
+[    5.837469] init: Service 'geomagneticd' (pid 181) killing any children in process group
+[    5.838639] init: Starting service 'gatekeeperd'...
+[    5.878118] healthd: wakealarm_init: timerfd_create failed
+[    5.911403] init: Starting service 'perfprofd'...
+[    5.923943] init: Warning!  Service qcamerasvr needs a SELinux domain defined; please fix!
+[    5.924013] init: Starting service 'qcamerasvr'...
+[    5.945584] init: Warning!  Service mpdecision needs a SELinux domain defined; please fix!
+[    5.945654] init: Starting service 'mpdecision'...
+[    5.946863] init: Warning!  Service thermald needs a SELinux domain defined; please fix!
+[    5.946928] init: Starting service 'thermald'...
+[    5.948084] init: Warning!  Service gpu_dcvsd needs a SELinux domain defined; please fix!
+[    5.948146] init: Starting service 'gpu_dcvsd'...
+[    5.949196] init: Starting service 'su_daemon'...
+[    5.949978] init: Service 'su_daemon' is being killed...
+[    5.950426] enable_store: android_usb: already disabled
+[    5.950818] mtp_bind_config
+[    5.950878] adb_bind_config
+[    5.954976] type=1400 audit(1474148562.450:15): avc: denied { create } for pid=172 comm="init" name="rild-debug2" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    6.155096] init: Service 'wlan_detect' (pid 183) exited with status 0
+[    6.162738] type=1400 audit(1474148562.450:16): avc: denied { setattr } for pid=172 comm="init" name="rild-debug2" dev="tmpfs" ino=3507 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    6.163004] type=1400 audit(1474148562.860:17): avc: denied { ioctl } for pid=180 comm="orientationd" path="/dev/input/event5" dev="tmpfs" ino=4366 ioctlcmd=4506 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[    6.191443] warning: `rild' uses 32-bit capabilities (legacy support in use)
+[    6.270748] mpdecision: cpu down
+[    6.322078] init: Service 'hwmac' (pid 173) exited with status 0
+[    6.475476] mpdecision: cpu up
+[    6.484823] Switched to NOHz mode on CPU #1
+[    6.533691] type=1400 audit(1474148562.910:18): avc: denied { execmod } for pid=175 comm="oem_rpc_svc" path="/system/lib/libdiag.so" dev="mmcblk0p12" ino=46826 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    6.583793] type=1400 audit(1474148562.980:19): avc: denied { create } for pid=207 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    6.584544] type=1400 audit(1474148562.980:20): avc: denied { setopt } for pid=207 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    6.584894] type=1400 audit(1474148562.980:21): avc: denied { bind } for pid=207 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    6.590639] smd_pkt_open: DATA8_CNTL open failed -19
+[    6.593016] smd_pkt_open: DATA9_CNTL open failed -19
+[    6.595841] smd_pkt_open: DATA12_CNTL open failed -19
+[    6.601858] smd_pkt_open: DATA13_CNTL open failed -19
+[    6.603758] smd_pkt_open: DATA14_CNTL open failed -19
+[    6.645608] type=1400 audit(1474148563.020:22): avc: denied { append } for pid=179 comm="sensord" name="sensord.err" dev="mmcblk0p13" ino=145497 scontext=u:r:init:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+[    6.646319] type=1400 audit(1474148563.030:23): avc: denied { write } for pid=188 comm="mm-qcamera-daem" name="video100" dev="tmpfs" ino=4373 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[    6.646584] type=1400 audit(1474148563.070:24): avc: denied { write } for pid=191 comm="gpu_dcvsd" name="kgsl-3d0" dev="tmpfs" ino=4467 scontext=u:r:init:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[    6.646819] type=1400 audit(1474148563.070:25): avc: denied { read } for pid=215 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    6.647288] type=1400 audit(1474148563.160:26): avc: denied { write } for pid=180 comm="orientationd" name="event5" dev="tmpfs" ino=4366 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[    6.647534] type=1400 audit(1474148563.350:27): avc: denied { ioctl } for pid=191 comm="gpu_dcvsd" path="/dev/kgsl-3d0" dev="tmpfs" ino=4467 ioctlcmd=902 scontext=u:r:init:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[    6.704041] init: Service 'sysinit' (pid 160) exited with status 0
+[    6.981354] type=1400 audit(1474148563.690:29): avc: denied { execmod } for pid=172 comm="rild" path="/system/lib/libril-qc-qmi-1.so" dev="mmcblk0p12" ino=46986 scontext=u:r:rild:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    6.981684] type=1400 audit(1474148563.690:28): avc: denied { execmod } for pid=165 comm="rild" path="/system/lib/libril-qc-qmi-1.so" dev="mmcblk0p12" ino=46986 scontext=u:r:rild:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    6.999183] type=1400 audit(1474148563.710:30): avc: denied { read write } for pid=165 comm="rild" name="diag" dev="tmpfs" ino=4214 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    6.999508] type=1400 audit(1474148563.710:31): avc: denied { open } for pid=165 comm="rild" name="diag" dev="tmpfs" ino=4214 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    7.248483] type=1400 audit(1474148563.960:32): avc: denied { write } for pid=165 comm="rild" name="qmux_radio" dev="tmpfs" ino=4568 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1
+[    7.248783] type=1400 audit(1474148563.960:33): avc: denied { add_name } for pid=165 comm="rild" name="rild_pri_sync" scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1
+[    7.249009] type=1400 audit(1474148563.960:34): avc: denied { create } for pid=165 comm="rild" name="rild_pri_sync" scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    7.257171] type=1400 audit(1474148563.970:35): avc: denied { write } for pid=172 comm="rild" name="rild_pri_sync" dev="tmpfs" ino=4849 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    7.279211] type=1400 audit(1474148563.990:36): avc: denied { ioctl } for pid=188 comm="mm-qcamera-daem" path="/dev/video100" dev="tmpfs" ino=4373 ioctlcmd=56c1 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[    7.298641] type=1400 audit(1474148564.010:37): avc: denied { setattr } for pid=256 comm="rild" name=716D75785F636C69656E745F736F636B657420202020313732 dev="tmpfs" ino=4853 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    7.299231] type=1400 audit(1474148564.010:38): avc: denied { getattr } for pid=176 comm="qmuxd" path=2F6465762F736F636B65742F716D75785F726164696F2F716D75785F636C69656E745F736F636B657420202020313732 dev="tmpfs" ino=4853 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    7.299818] type=1400 audit(1474148564.010:39): avc: denied { unlink } for pid=176 comm="qmuxd" name=716D75785F636C69656E745F736F636B657420202020313732 dev="tmpfs" ino=4853 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    7.922091] smd_pkt_open: DATA8_CNTL open failed -19
+[    7.924469] smd_pkt_open: DATA9_CNTL open failed -19
+[    7.926541] smd_pkt_open: DATA8_CNTL open failed -19
+[    7.928528] smd_pkt_open: DATA12_CNTL open failed -19
+[    7.930543] smd_pkt_open: DATA9_CNTL open failed -19
+[    7.932341] smd_pkt_open: DATA13_CNTL open failed -19
+[    7.934228] smd_pkt_open: DATA12_CNTL open failed -19
+[    7.936259] smd_pkt_open: DATA14_CNTL open failed -19
+[    7.938186] smd_pkt_open: DATA13_CNTL open failed -19
+[    7.940568] smd_pkt_open: DATA14_CNTL open failed -19
+[    8.069533] init: Starting service 'bootanim'...
+[    8.305078] init: Service 'sensord' (pid 179) exited with status 251
+[    8.674859] pmapp_rpc_req_reply: successfully connected to 0x70001 rpc version
+[    8.676354] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[    8.676363] failed to request gpio_disp_pwr
+[    8.679406] mipi_novatek_nt35516_qhd_lcd_on: E
+[    8.679551] msm_fb_pan_display_sub:Don't refresh the first frame to LCD
+[    9.201536] random: nonblocking pool is initialized
+[    9.602929] type=1400 audit(1474148566.300:40): avc: denied { read write } for pid=167 comm="mediaserver" name="media0" dev="tmpfs" ino=4369 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.603298] type=1400 audit(1474148566.300:41): avc: denied { open } for pid=167 comm="mediaserver" name="media0" dev="tmpfs" ino=4369 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.603558] type=1400 audit(1474148566.300:42): avc: denied { ioctl } for pid=167 comm="mediaserver" path="/dev/media0" dev="tmpfs" ino=4369 ioctlcmd=7c00 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.604533] msm_mctl_register_subdevs:481:Gemini: Failure: goto out
+[    9.604573] ov8825_sensor_power_up IN
+[    9.604591] ov8825_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[    9.622819] msm_sensor_power_up: 613
+[    9.705796] msm_sensor id: 0x8825
+[    9.705999] csi_src_clk get failed
+[    9.731564] [adsp.c:handle_adsp_rtos_mtoa_app] INIT_INFO Event
+[    9.732371] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[    9.733206] [adsp.c:msm_adsp_get] opening module VFETASK
+[    9.734259] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[    9.741053] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[    9.741213] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[    9.743701] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[    9.743928] msm_enqueue: queue eventdata new max is 1
+[    9.746266] type=1400 audit(1474148566.450:43): avc: denied { ioctl } for pid=188 comm="mm-qcamera-daem" path="/dev/video100" dev="tmpfs" ino=4373 ioctlcmd=5659 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[    9.766013] msm_sensor_config: cfgtype = 32
+[    9.766109] msm_sensor_config: cfgtype = 29
+[    9.766134] msm_sensor_mode_init: 330
+[    9.766156] 8825 truly cm7055sensor setting in, update_type:0x0, res:0x0
+[    9.804859] Register INIT
+[    9.956863] Update OTP
+[   10.034891] ***f:ov8825_update_otp,896***
+[   10.055841] ***f:ov8825_update_otp,911***
+[   10.061528] ***f:ov8825_read_otp_wb,744***
+[   10.061569] ov8825_read_otp_wb customer_id  = 0x02
+[   10.061589] ov8825_read_otp_wb lens_id      = 0x0e
+[   10.061609] ov8825_read_otp_wb rg_ratio     = 0x42
+[   10.061629] ov8825_read_otp_wb bg_ratio     = 0x50
+[   10.061648] ov8825_read_otp_wb user_data[0] = 0x00
+[   10.061666] ov8825_read_otp_wb user_data[1] = 0x00
+[   10.061686] ov8825_read_otp_wb user_data[2] = 0x00
+[   10.061704] ov8825_read_otp_wb user_data[3] = 0x97
+[   10.061723] ov8825_read_otp_wb user_data[4] = 0x8b
+[   10.061743] ***f:ov8825_read_otp_wb,754***
+[   10.075138] ***f:ov8825_update_otp,964***
+[   10.075186] ov8825_update_awb_gain r_gain = 0x040f
+[   10.075208] ov8825_update_awb_gain g_gain = 0x0400
+[   10.075228] ov8825_update_awb_gain b_gain = 0x0400
+[   10.076129] ***f:ov8825_update_otp,968***
+[   10.076166] ***f:ov8825_update_otp_lenc,773***
+[   10.175914] ***f:ov8825_update_otp_lenc,834***
+[   10.203263] ***f:ov8825_update_otp,970***
+[   10.216126] ***ov8825 lens reg:0x5800,0x11
+[   10.216741] ***ov8825 lens reg:0x5801,0xe
+[   10.217353] ***ov8825 lens reg:0x5802,0xd
+[   10.217958] ***ov8825 lens reg:0x5803,0xd
+[   10.218553] ***ov8825 lens reg:0x5804,0xf
+[   10.219128] ***ov8825 lens reg:0x5805,0x17
+[   10.219704] ***ov8825 lens reg:0x5806,0xa
+[   10.220279] ***ov8825 lens reg:0x5807,0x6
+[   10.220854] ***ov8825 lens reg:0x5808,0x4
+[   10.221434] ***ov8825 lens reg:0x5809,0x4
+[   10.222024] ***ov8825 lens reg:0x580a,0x7
+[   10.222604] ***ov8825 lens reg:0x580b,0xb
+[   10.223133] ***ov8825 lens reg:0x580c,0x7
+[   10.223666] ***ov8825 lens reg:0x580d,0x2
+[   10.224186] ***ov8825 lens reg:0x580e,0x0
+[   10.224716] ***ov8825 lens reg:0x580f,0x0
+[   10.225308] ***ov8825 lens reg:0x5810,0x3
+[   10.225841] ***ov8825 lens reg:0x5811,0x8
+[   10.226386] ***ov8825 lens reg:0x5812,0x7
+[   10.226938] ***ov8825 lens reg:0x5813,0x2
+[   10.227473] ***ov8825 lens reg:0x5814,0x0
+[   10.227989] ***ov8825 lens reg:0x5815,0x0
+[   10.228511] ***ov8825 lens reg:0x5816,0x3
+[   10.229044] ***ov8825 lens reg:0x5817,0x9
+[   10.229561] ***ov8825 lens reg:0x5818,0xc
+[   10.230073] ***ov8825 lens reg:0x5819,0x7
+[   10.230586] ***ov8825 lens reg:0x581a,0x5
+[   10.231131] ***ov8825 lens reg:0x581b,0x5
+[   10.231664] ***ov8825 lens reg:0x581c,0x8
+[   10.232211] ***ov8825 lens reg:0x581d,0xd
+[   10.232754] ***ov8825 lens reg:0x581e,0x16
+[   10.233288] ***ov8825 lens reg:0x581f,0x10
+[   10.233831] ***ov8825 lens reg:0x5820,0xf
+[   10.234471] ***ov8825 lens reg:0x5821,0xf
+[   10.235094] ***ov8825 lens reg:0x5822,0x13
+[   10.235754] ***ov8825 lens reg:0x5823,0x1a
+[   10.236391] ***ov8825 lens reg:0x5824,0x46
+[   10.236991] ***ov8825 lens reg:0x5825,0x20
+[   10.240574] ***ov8825 lens reg:0x5826,0x20
+[   10.241164] ***ov8825 lens reg:0x5827,0x20
+[   10.241754] ***ov8825 lens reg:0x5828,0x46
+[   10.242353] ***ov8825 lens reg:0x5829,0x2
+[   10.242904] ***ov8825 lens reg:0x582a,0x40
+[   10.243471] ***ov8825 lens reg:0x582b,0x40
+[   10.244036] ***ov8825 lens reg:0x582c,0x40
+[   10.244573] ***ov8825 lens reg:0x582d,0x2
+[   10.245176] ***ov8825 lens reg:0x582e,0x20
+[   10.245774] ***ov8825 lens reg:0x582f,0x42
+[   10.246346] ***ov8825 lens reg:0x5830,0x62
+[   10.247096] ***ov8825 lens reg:0x5831,0x62
+[   10.247733] ***ov8825 lens reg:0x5832,0x20
+[   10.248299] ***ov8825 lens reg:0x5833,0x22
+[   10.248884] ***ov8825 lens reg:0x5834,0x42
+[   10.249426] ***ov8825 lens reg:0x5835,0x42
+[   10.250113] ***ov8825 lens reg:0x5836,0x42
+[   10.250709] ***ov8825 lens reg:0x5837,0x22
+[   10.251299] ***ov8825 lens reg:0x5838,0x44
+[   10.251901] ***ov8825 lens reg:0x5839,0x22
+[   10.252484] ***ov8825 lens reg:0x583a,0x20
+[   10.253106] ***ov8825 lens reg:0x583b,0x42
+[   10.253716] ***ov8825 lens reg:0x583c,0x44
+[   10.254333] ***ov8825 lens reg:0x583d,0xae
+[   10.281194] msm_enqueue: queue control new max is 1
+[   10.306068] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   10.306133] init: Starting service 'rmt_oeminfo'...
+[   10.307313] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   10.307391] init: Starting service 'geomagneticd'...
+[   10.308103] gpio_request: gpio-13 (sgm3141) status -16
+[   10.327548] init: Service 'geomagneticd' (pid 374) exited with status 1
+[   10.327626] init: Service 'geomagneticd' (pid 374) killing any children in process group
+[   10.338573] msm_sensor_config: cfgtype = 10
+[   10.338968] msm_sensor_config: cfgtype = 10
+[   10.438494] init: Service 'rmt_oeminfo' (pid 373) exited with status 255
+[   10.438601] init: Service 'rmt_oeminfo' (pid 373) killing any children in process group
+[   10.468094] msm_sensor_release called
+[   10.501161] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   10.502254] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   10.504978] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   10.505049] [adsp.c:msm_adsp_put] closing module VFETASK
+[   10.509188] ov8825_sensor_power_down IN
+[   10.547128] type=1400 audit(1474148566.990:44): avc: denied { write } for pid=167 comm="mediaserver" name="cam_socket0" dev="mmcblk0p13" ino=14 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_data_file:s0 tclass=sock_file permissive=1
+[   10.549591] type=1400 audit(1474148566.990:45): avc: denied { sendto } for pid=167 comm="mediaserver" path="/data/cam_socket0" scontext=u:r:mediaserver:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[   10.549961] type=1400 audit(1474148567.040:46): avc: denied { execute_no_trans } for pid=374 comm="init" path="/system/bin/geomagneticd" dev="mmcblk0p12" ino=23377 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   10.550981] type=1400 audit(1474148567.090:47): avc: denied { execmod } for pid=167 comm="mediaserver" path="/system/lib/libmmstillomx.so" dev="mmcblk0p12" ino=46934 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   10.560201] msm_sensor_power_down
+[   10.605029] msm_release_ion_client Calling ion_client_destroy
+[   11.195358] type=1400 audit(1474148567.910:48): avc: denied { execute_no_trans } for pid=394 comm="netmgrd" path="/system/bin/sh" dev="mmcblk0p12" ino=23463 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   11.240048] type=1400 audit(1474148567.950:49): avc: denied { read } for pid=394 comm="rm" path="pipe:[5095]" dev="pipefs" ino=5095 scontext=u:r:toolbox:s0 tcontext=u:r:init:s0 tclass=fifo_file permissive=1
+[   11.240496] type=1400 audit(1474148567.950:50): avc: denied { read write } for pid=394 comm="rm" path="/dev/diag" dev="tmpfs" ino=4214 scontext=u:r:toolbox:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   11.389314] type=1400 audit(1474148568.100:51): avc: denied { module_request } for pid=174 comm="netmgrd" kmod="netdev-rmnet_sdio0" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   11.397359] type=1400 audit(1474148568.110:52): avc: denied { sys_module } for pid=174 comm="netmgrd" capability=16 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[   12.149539] type=1400 audit(1474148568.860:53): avc: denied { write } for pid=174 comm="netmgrd" name="qmux_connect_socket" dev="tmpfs" ino=4796 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.175074] type=1400 audit(1474148568.870:54): avc: denied { create } for pid=174 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.175343] type=1400 audit(1474148568.870:55): avc: denied { bind } for pid=174 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.175628] type=1400 audit(1474148568.870:56): avc: denied { create } for pid=174 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   12.175819] type=1400 audit(1474148568.880:57): avc: denied { bind } for pid=174 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   12.476116] type=1400 audit(1474148569.190:58): avc: denied { read } for pid=448 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   12.498484] type=1400 audit(1474148569.190:59): avc: denied { write } for pid=448 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   12.734978] BATT: msm_battery_update_psy_status
+[   15.440181] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   15.440254] init: Starting service 'rmt_oeminfo'...
+[   15.441368] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   15.441431] init: Starting service 'geomagneticd'...
+[   15.455093] init: Service 'geomagneticd' (pid 521) exited with status 1
+[   15.455179] init: Service 'geomagneticd' (pid 521) killing any children in process group
+[   15.593936] init: Service 'rmt_oeminfo' (pid 520) exited with status 255
+[   15.594016] init: Service 'rmt_oeminfo' (pid 520) killing any children in process group
+[   15.674424] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 1 2 0 7
+[   15.675479] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 7 6 0 7
+[   15.676259] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume -1 6 0 7
+[   15.679006] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 10 9 0 7
+[   15.680164] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 5 3 0 7
+[   15.681843] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume -1 3 0 7
+[   15.683444] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 1 46 0 7
+[   15.685328] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 7 45 0 7
+[   15.687539] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 13 12 0 1
+[   15.689194] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 13 2 0 1
+[   15.776149] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[   15.778253] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 7 6 0 7
+[   15.780318] __msm_rpc_connect: server not found 30000013:30001
+[   15.780598] [audmgr.c:audmgr_rpc_thread] start
+[   15.780633] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[   15.781919] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[   15.792261] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[   15.792638] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[   19.134578] type=1400 audit(1474148575.840:60): avc: denied { module_request } for pid=163 comm="netd" kmod="netdev-dummy0" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   20.595283] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   20.595311] init: Starting service 'rmt_oeminfo'...
+[   20.596514] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   20.596543] init: Starting service 'geomagneticd'...
+[   20.609889] init: Service 'geomagneticd' (pid 601) exited with status 1
+[   20.609964] init: Service 'geomagneticd' (pid 601) killing any children in process group
+[   20.704028] init: Service 'rmt_oeminfo' (pid 600) exited with status 255
+[   20.704144] init: Service 'rmt_oeminfo' (pid 600) killing any children in process group
+[   22.755041] BATT: msm_battery_update_psy_status
+[   22.928003] request_suspend_state: wakeup (3->0) at 22933231667 (2016-09-17 21:42:59.651096665 UTC)
+[   22.928053] request_suspend_state: end of function. new_state 0, old_state 0, requested_suspend_state 0
+[   25.041634] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   25.041713] init: Starting service 'rmt_oeminfo'...
+[   25.043076] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   25.043149] init: Starting service 'geomagneticd'...
+[   25.066763] init: Service 'geomagneticd' (pid 634) exited with status 1
+[   25.066873] init: Service 'geomagneticd' (pid 634) killing any children in process group
+[   25.120423] init: Service 'rmt_oeminfo' (pid 633) exited with status 255
+[   25.120528] init: Service 'rmt_oeminfo' (pid 633) killing any children in process group
+[   30.122216] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   30.122333] init: Starting service 'rmt_oeminfo'...
+[   30.124464] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   30.124558] init: Starting service 'geomagneticd'...
+[   30.147993] init: Service 'geomagneticd' (pid 638) exited with status 1
+[   30.148069] init: Service 'geomagneticd' (pid 638) killing any children in process group
+[   30.298316] init: Service 'rmt_oeminfo' (pid 637) exited with status 255
+[   30.298351] init: Service 'rmt_oeminfo' (pid 637) killing any children in process group
+[   32.775044] BATT: msm_battery_update_psy_status
+[   32.775971] BATT: received, 2, 0, 0x0; 0, 4127, 96, 250; 0, 0, 0
+[   32.778858] type=1400 audit(1474148589.490:61): avc: denied { read } for pid=215 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   35.299398] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   35.299426] init: Starting service 'rmt_oeminfo'...
+[   35.301046] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   35.301096] init: Starting service 'geomagneticd'...
+[   35.311496] init: Service 'geomagneticd' (pid 640) exited with status 1
+[   35.312161] init: Service 'geomagneticd' (pid 640) killing any children in process group
+[   35.387966] init: Service 'rmt_oeminfo' (pid 639) exited with status 255
+[   35.388076] init: Service 'rmt_oeminfo' (pid 639) killing any children in process group
+[   40.389234] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   40.389301] init: Starting service 'rmt_oeminfo'...
+[   40.390499] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   40.390563] init: Starting service 'geomagneticd'...
+[   40.410203] init: Service 'geomagneticd' (pid 642) exited with status 1
+[   40.410318] init: Service 'geomagneticd' (pid 642) killing any children in process group
+[   40.508011] init: Service 'rmt_oeminfo' (pid 641) exited with status 255
+[   40.508079] init: Service 'rmt_oeminfo' (pid 641) killing any children in process group
+[   40.863394] rmt_storage_event_open_cb: open callback received
+[   40.863456] open partition /boot/modem_fs1 handle=1
+[   40.864929] rmt_storage_event_user_data_cb: send user data callback received
+[   40.866068] rmt_storage_event_open_cb: open callback received
+[   40.866128] open partition /boot/modem_fs2 handle=2
+[   40.867226] rmt_storage_event_user_data_cb: send user data callback received
+[   40.868364] rmt_storage_event_write_iovec_cb: write iovec callback received
+[   41.675951] mpdecision: cpu down
+[   42.794879] BATT: msm_battery_update_psy_status
+[   42.797471] BATT: received, 2, 0, 0x0; 0, 4128, 96, 250; 0, 0, 0
+[   42.930214] rmt_storage_ioctl: send status ioctl
+[   43.025553] mpdecision: cpu up
+[   43.034821] Switched to NOHz mode on CPU #1
+[   45.511059] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   45.511168] init: Starting service 'rmt_oeminfo'...
+[   45.525784] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   45.525819] init: Starting service 'geomagneticd'...
+[   45.584068] init: Service 'geomagneticd' (pid 652) exited with status 1
+[   45.584134] init: Service 'geomagneticd' (pid 652) killing any children in process group
+[   45.671614] init: Service 'rmt_oeminfo' (pid 651) exited with status 255
+[   45.671703] init: Service 'rmt_oeminfo' (pid 651) killing any children in process group
+[   50.673184] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   50.673304] init: Starting service 'rmt_oeminfo'...
+[   50.686354] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   50.686466] init: Starting service 'geomagneticd'...
+[   50.693599] init: Service 'geomagneticd' (pid 654) exited with status 1
+[   50.693641] init: Service 'geomagneticd' (pid 654) killing any children in process group
+[   50.764648] init: Service 'rmt_oeminfo' (pid 653) exited with status 255
+[   50.764721] init: Service 'rmt_oeminfo' (pid 653) killing any children in process group
+[   52.814878] BATT: msm_battery_update_psy_status
+[   52.818364] BATT: received, 2, 0, 0x0; 0, 4114, 95, 250; 0, 0, 0
+[   55.766431] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   55.766543] init: Starting service 'rmt_oeminfo'...
+[   55.768648] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   55.768734] init: Starting service 'geomagneticd'...
+[   55.785791] init: Service 'geomagneticd' (pid 656) exited with status 1
+[   55.785828] init: Service 'geomagneticd' (pid 656) killing any children in process group
+[   55.960404] init: Service 'rmt_oeminfo' (pid 655) exited with status 255
+[   55.960441] init: Service 'rmt_oeminfo' (pid 655) killing any children in process group
+[   60.962438] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   60.962564] init: Starting service 'rmt_oeminfo'...
+[   60.965403] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   60.965496] init: Starting service 'geomagneticd'...
+[   60.982499] init: Service 'geomagneticd' (pid 659) exited with status 1
+[   60.982536] init: Service 'geomagneticd' (pid 659) killing any children in process group
+[   61.097551] init: Service 'rmt_oeminfo' (pid 658) exited with status 255
+[   61.097723] init: Service 'rmt_oeminfo' (pid 658) killing any children in process group
+[   62.834864] BATT: msm_battery_update_psy_status
+[   62.835551] BATT: received, 2, 0, 0x0; 0, 4116, 95, 250; 0, 0, 0
+[   64.779874] type=1400 audit(1474148621.429:62): avc: denied { execmod } for pid=661 comm="system_server" path="/system/lib/hw/sensors.msm7x27a.so" dev="mmcblk0p12" ino=46680 scontext=u:r:system_server:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   65.101369] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   65.101503] init: Starting service 'rmt_oeminfo'...
+[   65.107071] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   65.107173] init: Starting service 'geomagneticd'...
+[   65.128384] init: Service 'geomagneticd' (pid 665) exited with status 1
+[   65.128464] init: Service 'geomagneticd' (pid 665) killing any children in process group
+[   65.268796] init: Service 'rmt_oeminfo' (pid 664) exited with status 255
+[   65.268839] init: Service 'rmt_oeminfo' (pid 664) killing any children in process group
+[   65.320478] pmic_rpc_req_reply: successfully connected to 0x60001 rpc version
+[   66.407286] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[   66.407343] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[   66.407364] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[   66.407386] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[   66.407406] lowmemorykiller: oom_adj 3 => oom_score_adj 176
+[   66.407433] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[   66.407454] lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+[   66.407964] init: write_file: Unable to open '/proc/sys/vm/extra_free_kbytes': No such file or directory
+[   67.375401] mpdecision: cpu down
+[   67.575518] mpdecision: cpu up
+[   67.584894] Switched to NOHz mode on CPU #1
+[   70.201601] init: Service 'bootanim' (pid 320) exited with status 0
+[   70.203238] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   70.203336] init: Starting service 'rmt_oeminfo'...
+[   70.206204] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   70.206311] init: Starting service 'geomagneticd'...
+[   70.214719] init: Service 'geomagneticd' (pid 699) exited with status 1
+[   70.214863] init: Service 'geomagneticd' (pid 699) killing any children in process group
+[   70.244236] init: Service 'rmt_oeminfo' (pid 698) exited with status 255
+[   70.244319] init: Service 'rmt_oeminfo' (pid 698) killing any children in process group
+[   70.975034] mpdecision: cpu down
+[   71.735789] type=1400 audit(1474148628.439:63): avc: denied { sys_module } for pid=706 comm="WifiStateMachin" capability=16 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=capability permissive=1
+[   71.776488] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[   71.776659] type=1400 audit(1474148628.489:64): avc: denied { ioctl } for pid=715 comm="Binder_2" path="/dev/msm_cad" dev="tmpfs" ino=4254 ioctlcmd=7302 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   71.814434] [snd_cad.c:snd_cad_ioctl] snd_cad_set_volume 7 6 0 6
+[   71.864483] acc_open
+[   71.864528] acc_release
+[   72.075569] mpdecision: cpu up
+[   72.084836] Switched to NOHz mode on CPU #1
+[   72.575194] mpdecision: cpu down
+[   72.825496] mpdecision: cpu up
+[   72.834821] Switched to NOHz mode on CPU #1
+[   72.854963] BATT: msm_battery_update_psy_status
+[   72.855694] BATT: received, 2, 0, 0x0; 0, 4145, 95, 250; 0, 0, 0
+[   73.129511] mpdecision: cpu down
+[   73.435479] mpdecision: cpu up
+[   73.444844] Switched to NOHz mode on CPU #1
+[   74.124109] type=1400 audit(1474148630.829:65): avc: denied { getattr } for pid=806 comm="d.process.media" path="/storage/0659-738F" dev="tmpfs" ino=9291 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:storage_stub_file:s0 tclass=dir permissive=1
+[   74.755088] [adsp.c:msm_adsp_get] opening module AUDRECTASK
+[   74.756174] [audio_evrc_in.c:audevrc_in_open] O/P buffers:valid phy: 29f00000 sz: 1000
+[   74.756283] [audio_evrc_in.c:audevrc_in_open] Got valid phy: 29f01000 sz: 3000
+[   74.792058] [adsp.c:msm_adsp_put] closing module AUDRECTASK
+[   74.817196] [adsp.c:msm_adsp_get] opening module AUDRECTASK
+[   74.818144] [audio_qcelp_in.c:audqcelp_in_open] O/P buffers:valid phy: 29f00000 sz: 1000
+[   74.818246] [audio_qcelp_in.c:audqcelp_in_open] Got valid phy: 29f01000 sz: 3000
+[   74.825453] [adsp.c:msm_adsp_put] closing module AUDRECTASK
+[   74.911371] type=1400 audit(1474148631.469:66): avc: denied { read write } for pid=533 comm="Binder_1" name="msm_evrc_in" dev="tmpfs" ino=4272 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   74.912003] type=1400 audit(1474148631.469:67): avc: denied { open } for pid=533 comm="Binder_1" name="msm_evrc_in" dev="tmpfs" ino=4272 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   74.918933] [audio_qcelp.c:audqcelp_open] audio instance 0xddc94c00 created
+[   74.918978] [audpp.c:audpp_adec_alloc] decid =0x00020000 module_name=AUDPLAY0TASK, queueid=13 
+[   74.919056] [audio_qcelp.c:audqcelp_open] O/P buffers:valid phy: 29f00000 sz: 1000
+[   74.919116] [adsp.c:msm_adsp_get] opening module AUDPLAY0TASK
+[   74.919976] [adsp.c:msm_adsp_get] opening module RMTASK
+[   74.920718] [adsp.c:msm_adsp_enable] enable 'RMTASK'state[0] id[17371022]
+[   74.924826] [adsp.c:handle_adsp_rtos_mtoa_app] module RMTASK: READY
+[   74.935289] [audio_qcelp.c:audqcelp_release] audio instance 0xddc94c00 freeing
+[   74.935358] [adsp.c:msm_adsp_disable] disable 'RMTASK'
+[   74.937086] [adsp.c:msm_adsp_put] closing module RMTASK
+[   74.937136] [adsp.c:msm_adsp_put] closing module AUDPLAY0TASK
+[   74.937169] [audpp.c:audpp_adec_free] free decid =0 
+[   74.948616] type=1400 audit(1474148631.559:68): avc: denied { execmod } for pid=533 comm="Binder_1" path="/system/lib/libmm-adspsvc.so" dev="mmcblk0p12" ino=46920 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   74.951121] [audio_evrc.c:audevrc_open] audio instance 0xddbfac00 created
+[   74.951163] [audpp.c:audpp_adec_alloc] decid =0x00020000 module_name=AUDPLAY0TASK, queueid=13 
+[   74.951241] [audio_evrc.c:audevrc_open] O/P buffers:valid phy: 29f00000 sz: 1000
+[   74.951304] [adsp.c:msm_adsp_get] opening module AUDPLAY0TASK
+[   74.952203] [adsp.c:msm_adsp_get] opening module RMTASK
+[   74.952806] [adsp.c:msm_adsp_enable] enable 'RMTASK'state[0] id[17371022]
+[   74.957299] [adsp.c:handle_adsp_rtos_mtoa_app] module RMTASK: READY
+[   74.976628] [audio_evrc.c:audevrc_release] audio instance 0xddbfac00 freeing
+[   74.976691] [adsp.c:msm_adsp_disable] disable 'RMTASK'
+[   74.978453] [adsp.c:msm_adsp_put] closing module RMTASK
+[   74.978511] [adsp.c:msm_adsp_put] closing module AUDPLAY0TASK
+[   74.978549] [audpp.c:audpp_adec_free] free decid =0 
+[   74.995626] [audio_ac3.c:audac3_open] audio instance 0xddbfac00 created
+[   74.995679] [audpp.c:audpp_adec_alloc] decid =0x00020000 module_name=AUDPLAY0TASK, queueid=13 
+[   74.995781] [audio_ac3.c:audac3_open] O/P buffers:valid phy: 29f00000 sz: 2000
+[   74.995856] [adsp.c:msm_adsp_get] opening module AUDPLAY0TASK
+[   74.996841] [adsp.c:msm_adsp_get] opening module RMTASK
+[   74.997666] [adsp.c:msm_adsp_enable] enable 'RMTASK'state[0] id[17371022]
+[   75.002214] [adsp.c:handle_adsp_rtos_mtoa_app] module RMTASK: READY
+[   75.002351] [adsp_rm.c:get_adsp_resource] Reason for failure: DDP invalid/no licence
+[   75.002388] [adsp.c:msm_adsp_disable] disable 'RMTASK'
+[   75.004408] [adsp.c:msm_adsp_put] closing module RMTASK
+[   75.004476] [audio_ac3.c:audac3_open] ADSP resources are not available for AC3 session 0xddbfac00 on decoder: 0
+[   75.004513] [adsp.c:msm_adsp_put] closing module AUDPLAY0TASK
+[   75.004634] [audpp.c:audpp_adec_free] free decid =0 
+[   75.011563] [audio_wma.c:audio_open] audio instance 0xddbfac00 created
+[   75.011613] [audpp.c:audpp_adec_alloc] decid =0x00020000 module_name=AUDPLAY0TASK, queueid=13 
+[   75.011708] [audio_wma.c:audio_open] O/P buffers:valid phy: 29f00000 sz: 2000
+[   75.011771] [adsp.c:msm_adsp_get] opening module AUDPLAY0TASK
+[   75.012618] [adsp.c:msm_adsp_get] opening module RMTASK
+[   75.013428] [adsp.c:msm_adsp_enable] enable 'RMTASK'state[0] id[17371022]
+[   75.017671] [adsp.c:handle_adsp_rtos_mtoa_app] module RMTASK: READY
+[   75.026574] [audio_wma.c:audio_release] audio instance 0xddbfac00 freeing
+[   75.026641] [adsp.c:msm_adsp_disable] disable 'RMTASK'
+[   75.028481] [adsp.c:msm_adsp_put] closing module RMTASK
+[   75.028549] [adsp.c:msm_adsp_put] closing module AUDPLAY0TASK
+[   75.028588] [audpp.c:audpp_adec_free] free decid =0 
+[   75.031648] [audio_wmapro.c:audio_open] audio instance 0xddc4b000 created
+[   75.031691] [audpp.c:audpp_adec_alloc] decid =0x00020000 module_name=AUDPLAY0TASK, queueid=13 
+[   75.031764] [audio_wmapro.c:audio_open] O/P buffers:valid phy: 29f00000 sz: 5000
+[   75.031821] [adsp.c:msm_adsp_get] opening module AUDPLAY0TASK
+[   75.032643] [adsp.c:msm_adsp_get] opening module RMTASK
+[   75.033291] [adsp.c:msm_adsp_enable] enable 'RMTASK'state[0] id[17371022]
+[   75.037358] [adsp.c:handle_adsp_rtos_mtoa_app] module RMTASK: READY
+[   75.045641] [audio_wmapro.c:audio_release] audio instance 0xddc4b000 freeing
+[   75.045708] [adsp.c:msm_adsp_disable] disable 'RMTASK'
+[   75.047641] [adsp.c:msm_adsp_put] closing module RMTASK
+[   75.047708] [adsp.c:msm_adsp_put] closing module AUDPLAY0TASK
+[   75.047754] [audpp.c:audpp_adec_free] free decid =0 
+[   75.190196] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   75.190264] init: Starting service 'rmt_oeminfo'...
+[   75.191366] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   75.191428] init: Starting service 'geomagneticd'...
+[   75.198028] init: Service 'geomagneticd' (pid 969) exited with status 1
+[   75.198111] init: Service 'geomagneticd' (pid 969) killing any children in process group
+[   75.216458] type=1400 audit(1474148631.909:69): avc: denied { execute_no_trans } for pid=968 comm="init" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   75.229599] init: Service 'rmt_oeminfo' (pid 968) exited with status 255
+[   75.229671] init: Service 'rmt_oeminfo' (pid 968) killing any children in process group
+[   75.233918] type=1400 audit(1474148631.909:70): avc: denied { execmod } for pid=968 comm="rmt_oeminfo" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   76.300888] type=1400 audit(1474148633.009:71): avc: denied { module_request } for pid=1068 comm="ip6tables" kmod="nf_conntrack-10" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   76.301983] cannot load conntrack support for proto=10
+[   76.486989] cannot load conntrack support for proto=10
+[   76.567646] SELinux: initialized (dev mmcblk1p1, type vfat), uses genfs_contexts
+[   76.628606] type=1400 audit(1474148633.339:72): avc: denied { read } for pid=215 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   76.629558] SELinux: initialized (dev fuse, type fuse), uses genfs_contexts
+[   76.630873] SELinux: initialized (dev fuse, type fuse), uses genfs_contexts
+[   76.632056] SELinux: initialized (dev fuse, type fuse), uses genfs_contexts
+[   76.907823] cannot load conntrack support for proto=10
+[   76.979488] cannot load conntrack support for proto=10
+[   77.082571] cannot load conntrack support for proto=10
+[   77.108394] cannot load conntrack support for proto=10
+[   77.164869] cannot load conntrack support for proto=10
+[   77.217746] xt_conntrack: cannot load conntrack support for proto=10
+[   79.035046] mpdecision: cpu down
+[   79.235556] mpdecision: cpu up
+[   79.244833] Switched to NOHz mode on CPU #1
+[   80.230661] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   80.230729] init: Starting service 'rmt_oeminfo'...
+[   80.231903] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   80.231969] init: Starting service 'geomagneticd'...
+[   80.273654] init: Service 'geomagneticd' (pid 1342) exited with status 1
+[   80.273719] init: Service 'geomagneticd' (pid 1342) killing any children in process group
+[   80.361366] init: Service 'rmt_oeminfo' (pid 1341) exited with status 255
+[   80.361446] init: Service 'rmt_oeminfo' (pid 1341) killing any children in process group
+[   80.681151] type=1400 audit(1474148636.999:73): avc: denied { write } for pid=1347 comm="RILReceiver1" name="rild2" dev="tmpfs" ino=3509 scontext=u:r:radio:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   80.980676] type=1400 audit(1474148637.009:74): avc: denied { write } for pid=256 comm="rild" name="rild_pri_sync" dev="tmpfs" ino=4849 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   82.874834] BATT: msm_battery_update_psy_status
+[   82.875778] BATT: received, 2, 0, 0x0; 0, 4126, 94, 250; 0, 0, 0
+[   83.567129] msm_mctl_register_subdevs:481:Gemini: Failure: goto out
+[   83.567144] ov8825_sensor_power_up IN
+[   83.567151] ov8825_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[   83.573251] msm_sensor_power_up: 613
+[   83.652459] type=1400 audit(1474148640.149:75): avc: denied { read write } for pid=716 comm="Binder_3" name="media0" dev="tmpfs" ino=4369 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   83.655788] msm_sensor id: 0x8825
+[   83.655918] csi_src_clk get failed
+[   83.657051] type=1400 audit(1474148640.149:76): avc: denied { open } for pid=716 comm="Binder_3" name="media0" dev="tmpfs" ino=4369 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   83.657366] type=1400 audit(1474148640.149:77): avc: denied { ioctl } for pid=716 comm="Binder_3" path="/dev/media0" dev="tmpfs" ino=4369 ioctlcmd=7c00 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   83.687514] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[   83.688654] [adsp.c:msm_adsp_get] opening module VFETASK
+[   83.689938] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[   83.694073] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[   83.694196] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[   83.696239] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[   83.696376] msm_enqueue: queue eventdata new max is 1
+[   83.720469] msm_sensor_config: cfgtype = 32
+[   83.720553] msm_sensor_config: cfgtype = 29
+[   83.729704] msm_sensor_mode_init: 330
+[   83.729716] 8825 truly cm7055sensor setting in, update_type:0x0, res:0x0
+[   83.764844] Register INIT
+[   83.825044] type=1400 audit(1474148640.409:78): avc: denied { ioctl } for pid=188 comm="mm-qcamera-daem" path="/dev/video100" dev="tmpfs" ino=4373 ioctlcmd=5659 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[   83.926131] Update OTP
+[   84.004919] ***f:ov8825_update_otp,896***
+[   84.021039] ***f:ov8825_update_otp,911***
+[   84.027204] ***f:ov8825_read_otp_wb,744***
+[   84.027264] ov8825_read_otp_wb customer_id  = 0x02
+[   84.027284] ov8825_read_otp_wb lens_id      = 0x0e
+[   84.027304] ov8825_read_otp_wb rg_ratio     = 0x42
+[   84.027324] ov8825_read_otp_wb bg_ratio     = 0x50
+[   84.027343] ov8825_read_otp_wb user_data[0] = 0x00
+[   84.027363] ov8825_read_otp_wb user_data[1] = 0x00
+[   84.027381] ov8825_read_otp_wb user_data[2] = 0x00
+[   84.027401] ov8825_read_otp_wb user_data[3] = 0x97
+[   84.027419] ov8825_read_otp_wb user_data[4] = 0x8b
+[   84.027439] ***f:ov8825_read_otp_wb,754***
+[   84.041053] ***f:ov8825_update_otp,964***
+[   84.041061] ov8825_update_awb_gain r_gain = 0x040f
+[   84.041068] ov8825_update_awb_gain g_gain = 0x0400
+[   84.041074] ov8825_update_awb_gain b_gain = 0x0400
+[   84.041888] ***f:ov8825_update_otp,968***
+[   84.041898] ***f:ov8825_update_otp_lenc,773***
+[   84.141503] ***f:ov8825_update_otp_lenc,834***
+[   84.166864] ***f:ov8825_update_otp,970***
+[   84.185888] ***ov8825 lens reg:0x5800,0x11
+[   84.186493] ***ov8825 lens reg:0x5801,0xe
+[   84.187094] ***ov8825 lens reg:0x5802,0xd
+[   84.187663] ***ov8825 lens reg:0x5803,0xd
+[   84.188218] ***ov8825 lens reg:0x5804,0xf
+[   84.188808] ***ov8825 lens reg:0x5805,0x17
+[   84.189389] ***ov8825 lens reg:0x5806,0xa
+[   84.189989] ***ov8825 lens reg:0x5807,0x6
+[   84.190583] ***ov8825 lens reg:0x5808,0x4
+[   84.191173] ***ov8825 lens reg:0x5809,0x4
+[   84.191758] ***ov8825 lens reg:0x580a,0x7
+[   84.192341] ***ov8825 lens reg:0x580b,0xb
+[   84.192933] ***ov8825 lens reg:0x580c,0x7
+[   84.193529] ***ov8825 lens reg:0x580d,0x2
+[   84.194116] ***ov8825 lens reg:0x580e,0x0
+[   84.194709] ***ov8825 lens reg:0x580f,0x0
+[   84.195269] ***ov8825 lens reg:0x5810,0x3
+[   84.195843] ***ov8825 lens reg:0x5811,0x8
+[   84.196421] ***ov8825 lens reg:0x5812,0x7
+[   84.196996] ***ov8825 lens reg:0x5813,0x2
+[   84.197579] ***ov8825 lens reg:0x5814,0x0
+[   84.198168] ***ov8825 lens reg:0x5815,0x0
+[   84.198728] ***ov8825 lens reg:0x5816,0x3
+[   84.199291] ***ov8825 lens reg:0x5817,0x9
+[   84.199834] ***ov8825 lens reg:0x5818,0xc
+[   84.211281] ***ov8825 lens reg:0x5819,0x7
+[   84.211874] ***ov8825 lens reg:0x581a,0x5
+[   84.212423] ***ov8825 lens reg:0x581b,0x5
+[   84.212988] ***ov8825 lens reg:0x581c,0x8
+[   84.213528] ***ov8825 lens reg:0x581d,0xd
+[   84.219231] ***ov8825 lens reg:0x581e,0x16
+[   84.219826] ***ov8825 lens reg:0x581f,0x10
+[   84.220389] ***ov8825 lens reg:0x5820,0xf
+[   84.220969] ***ov8825 lens reg:0x5821,0xf
+[   84.221549] ***ov8825 lens reg:0x5822,0x13
+[   84.222124] ***ov8825 lens reg:0x5823,0x1a
+[   84.222699] ***ov8825 lens reg:0x5824,0x46
+[   84.223266] ***ov8825 lens reg:0x5825,0x20
+[   84.223829] ***ov8825 lens reg:0x5826,0x20
+[   84.224396] ***ov8825 lens reg:0x5827,0x20
+[   84.224966] ***ov8825 lens reg:0x5828,0x46
+[   84.225544] ***ov8825 lens reg:0x5829,0x2
+[   84.226198] ***ov8825 lens reg:0x582a,0x40
+[   84.226781] ***ov8825 lens reg:0x582b,0x40
+[   84.227381] ***ov8825 lens reg:0x582c,0x40
+[   84.227968] ***ov8825 lens reg:0x582d,0x2
+[   84.228571] ***ov8825 lens reg:0x582e,0x20
+[   84.229169] ***ov8825 lens reg:0x582f,0x42
+[   84.229741] ***ov8825 lens reg:0x5830,0x62
+[   84.230326] ***ov8825 lens reg:0x5831,0x62
+[   84.230904] ***ov8825 lens reg:0x5832,0x20
+[   84.231496] ***ov8825 lens reg:0x5833,0x22
+[   84.232068] ***ov8825 lens reg:0x5834,0x42
+[   84.232666] ***ov8825 lens reg:0x5835,0x42
+[   84.233263] ***ov8825 lens reg:0x5836,0x42
+[   84.233843] ***ov8825 lens reg:0x5837,0x22
+[   84.234428] ***ov8825 lens reg:0x5838,0x44
+[   84.235423] ***ov8825 lens reg:0x5839,0x22
+[   84.236013] ***ov8825 lens reg:0x583a,0x20
+[   84.236613] ***ov8825 lens reg:0x583b,0x42
+[   84.237209] ***ov8825 lens reg:0x583c,0x44
+[   84.237823] ***ov8825 lens reg:0x583d,0xae
+[   84.243394] msm_enqueue: queue control new max is 1
+[   84.250609] type=1400 audit(1474148640.949:79): avc: denied { write } for pid=716 comm="Binder_3" name="cam_socket0" dev="mmcblk0p13" ino=14 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_data_file:s0 tclass=sock_file permissive=1
+[   84.285438] msm_sensor_config: cfgtype = 10
+[   84.285729] msm_sensor_config: cfgtype = 10
+[   84.310771] msm_sensor_release called
+[   84.311396] type=1400 audit(1474148640.949:80): avc: denied { sendto } for pid=716 comm="Binder_3" path="/data/cam_socket0" scontext=u:r:mediaserver:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[   84.341259] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   84.342363] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   84.344211] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   84.344263] [adsp.c:msm_adsp_put] closing module VFETASK
+[   84.346828] ov8825_sensor_power_down IN
+[   84.399919] msm_sensor_power_down
+[   84.444848] msm_release_ion_client Calling ion_client_destroy
+[   85.085106] mpdecision: cpu down
+[   85.335344] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   85.335404] init: Starting service 'rmt_oeminfo'...
+[   85.336286] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   85.336339] init: Starting service 'geomagneticd'...
+[   85.401818] init: Service 'geomagneticd' (pid 1572) exited with status 1
+[   85.401879] init: Service 'geomagneticd' (pid 1572) killing any children in process group
+[   85.480189] init: Service 'rmt_oeminfo' (pid 1571) exited with status 255
+[   85.480354] init: Service 'rmt_oeminfo' (pid 1571) killing any children in process group
+[   85.485558] mpdecision: cpu up
+[   85.494828] Switched to NOHz mode on CPU #1
+[   86.158879] type=1400 audit(1474148642.849:81): avc: denied { write } for pid=1611 comm="rild" name="rapi_socket" dev="mmcblk0p13" ino=13 scontext=u:r:rild:s0 tcontext=u:object_r:system_data_file:s0 tclass=sock_file permissive=1
+[   90.287676] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   90.287748] init: Starting service 'rmt_oeminfo'...
+[   90.288943] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   90.289023] init: Starting service 'geomagneticd'...
+[   90.335226] init: Service 'geomagneticd' (pid 1702) exited with status 1
+[   90.335301] init: Service 'geomagneticd' (pid 1702) killing any children in process group
+[   90.383788] init: Service 'rmt_oeminfo' (pid 1701) exited with status 255
+[   90.383874] init: Service 'rmt_oeminfo' (pid 1701) killing any children in process group
+[   92.905063] BATT: msm_battery_update_psy_status
+[   92.909108] BATT: received, 2, 0, 0x0; 0, 4127, 94, 250; 0, 0, 0
+[   95.132124] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   95.132191] init: Starting service 'rmt_oeminfo'...
+[   95.133304] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   95.133373] init: Starting service 'geomagneticd'...
+[   95.147636] init: Service 'geomagneticd' (pid 1815) exited with status 1
+[   95.148048] init: Service 'geomagneticd' (pid 1815) killing any children in process group
+[   95.310639] init: Service 'rmt_oeminfo' (pid 1814) exited with status 255
+[   95.310711] init: Service 'rmt_oeminfo' (pid 1814) killing any children in process group
+[   99.075654] rmt_storage_event_write_iovec_cb: write iovec callback received
+[   99.439094] request_suspend_state: sleep (0->3) at 99444316660 (2016-09-17 21:44:16.162181658 UTC)
+[   99.439154] request_suspend_state: goto late resume.state 1
+[   99.439181] request_suspend_state: end of function. new_state 3, old_state 0, requested_suspend_state 3
+[   99.439264] early_suspend: state 1
+[   99.439291] [elan] elan_ktf2k_ts_suspend: enter
+[   99.464861] mipi_dsi_ahb_ctrl: ahb clks already ON
+[   99.464906] mipi_dsi_clk_enable: mipi_dsi_clks already ON
+[   99.465003] mipi_novatek_nt35516_qhd_lcd_off: E
+[   99.616139] mipi_novatek_nt35516_qhd_lcd_off: X
+[   99.618098] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[   99.618111] failed to request gpio_disp_pwr
+[   99.618169] PM: early suspend of devices complete after 178.901 msecs
+[   99.985093] mpdecision: cpu down
+[   99.988184] type=1400 audit(1474148656.699:82): avc: denied { read } for pid=215 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  100.090206] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  100.090264] init: Starting service 'rmt_oeminfo'...
+[  100.091151] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  100.091206] init: Starting service 'geomagneticd'...
+[  100.093463] init: Service 'geomagneticd' (pid 1939) exited with status 1
+[  100.093523] init: Service 'geomagneticd' (pid 1939) killing any children in process group
+[  100.118696] init: Service 'rmt_oeminfo' (pid 1938) exited with status 255
+[  100.118761] init: Service 'rmt_oeminfo' (pid 1938) killing any children in process group
+[  101.087833] rmt_storage_ioctl: send status ioctl
+[  101.165486] mpdecision: cpu up
+[  101.174829] Switched to NOHz mode on CPU #1
+[  102.915148] BATT: msm_battery_update_psy_status
+[  102.916103] BATT: received, 2, 0, 0x0; 0, 4110, 93, 250; 0, 0, 0
+[  105.309658] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  105.309726] init: Starting service 'rmt_oeminfo'...
+[  105.311239] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  105.311303] init: Starting service 'geomagneticd'...
+[  105.319994] init: Service 'geomagneticd' (pid 2035) exited with status 1
+[  105.320076] init: Service 'geomagneticd' (pid 2035) killing any children in process group
+[  105.371534] init: Service 'rmt_oeminfo' (pid 2034) exited with status 255
+[  105.371606] init: Service 'rmt_oeminfo' (pid 2034) killing any children in process group
+[  110.349831] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  110.349908] init: Starting service 'rmt_oeminfo'...
+[  110.352286] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  110.352349] init: Starting service 'geomagneticd'...
+[  110.369089] init: Service 'geomagneticd' (pid 2245) exited with status 1
+[  110.369164] init: Service 'geomagneticd' (pid 2245) killing any children in process group
+[  110.427831] init: Service 'rmt_oeminfo' (pid 2244) exited with status 255
+[  110.427903] init: Service 'rmt_oeminfo' (pid 2244) killing any children in process group
+[  112.934879] BATT: msm_battery_update_psy_status
+[  112.935993] BATT: received, 2, 0, 0x0; 0, 4136, 93, 250; 0, 0, 0
+[  115.429518] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  115.429598] init: Starting service 'rmt_oeminfo'...
+[  115.430846] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  115.430911] init: Starting service 'geomagneticd'...
+[  115.435298] init: Service 'geomagneticd' (pid 2287) exited with status 1
+[  115.435374] init: Service 'geomagneticd' (pid 2287) killing any children in process group
+[  115.467351] init: Service 'rmt_oeminfo' (pid 2286) exited with status 255
+[  115.467423] init: Service 'rmt_oeminfo' (pid 2286) killing any children in process group
+[  120.543448] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  120.543526] init: Starting service 'rmt_oeminfo'...
+[  120.545943] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  120.546031] init: Starting service 'geomagneticd'...
+[  120.564346] init: Service 'geomagneticd' (pid 2475) exited with status 1
+[  120.564439] init: Service 'geomagneticd' (pid 2475) killing any children in process group
+[  120.604931] init: Service 'rmt_oeminfo' (pid 2474) exited with status 255
+[  120.604999] init: Service 'rmt_oeminfo' (pid 2474) killing any children in process group
+[  121.721274] lowmemorykiller: Killing 'android.gms:car' (2003), adj 764,
+[  121.721283]    to free 45568kB on behalf of 'kswapd0' (49) because
+[  121.721288]    cache 311892kB is below limit 154460kB for oom_score_adj 353
+[  121.721293]    Free memory is 4448kB above reserved.
+[  121.721298]    Free CMA is 4kB
+[  121.721301]    Total reserve is 8192kB
+[  121.721304]    Total free pages is 4452kB
+[  121.721309]    Total file cache is 313408kB
+[  121.721313]    Slab Reclaimable is 16064kB
+[  121.721318]    Slab UnReclaimable is 22808kB
+[  121.721321]    Total Slab is 38872kB
+[  121.721324]    GFP mask is 0xd0
+[  122.954838] BATT: msm_battery_update_psy_status
+[  122.955708] BATT: received, 2, 0, 0x0; 0, 4127, 93, 250; 0, 0, 0
+[  123.216644] type=1400 audit(1474148679.919:83): avc: denied { write } for pid=277 comm="rild" name="rild_pri_sync" dev="tmpfs" ino=4849 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[  125.606548] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  125.606621] init: Starting service 'rmt_oeminfo'...
+[  125.608651] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  125.608741] init: Starting service 'geomagneticd'...
+[  125.612318] type=1400 audit(1474148682.319:84): avc: denied { execute_no_trans } for pid=2617 comm="init" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  125.635969] init: Service 'geomagneticd' (pid 2618) exited with status 1
+[  125.636043] init: Service 'geomagneticd' (pid 2618) killing any children in process group
+[  125.655021] type=1400 audit(1474148682.349:85): avc: denied { execmod } for pid=2617 comm="rmt_oeminfo" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  125.667994] init: Service 'rmt_oeminfo' (pid 2617) exited with status 255
+[  125.668088] init: Service 'rmt_oeminfo' (pid 2617) killing any children in process group
+[  130.669416] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  130.669491] init: Starting service 'rmt_oeminfo'...
+[  130.670698] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  130.670773] init: Starting service 'geomagneticd'...
+[  130.696289] init: Service 'geomagneticd' (pid 3040) exited with status 1
+[  130.696364] init: Service 'geomagneticd' (pid 3040) killing any children in process group
+[  130.719038] init: Service 'rmt_oeminfo' (pid 3039) exited with status 255
+[  130.719114] init: Service 'rmt_oeminfo' (pid 3039) killing any children in process group
+[  132.974891] BATT: msm_battery_update_psy_status
+[  132.975698] BATT: received, 2, 0, 0x0; 0, 4137, 93, 250; 0, 0, 0
+[  135.720099] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  135.720166] init: Starting service 'rmt_oeminfo'...
+[  135.722349] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  135.722424] init: Starting service 'geomagneticd'...
+[  135.732528] init: Service 'geomagneticd' (pid 3147) exited with status 1
+[  135.732604] init: Service 'geomagneticd' (pid 3147) killing any children in process group
+[  135.806591] init: Service 'rmt_oeminfo' (pid 3146) exited with status 255
+[  135.806678] init: Service 'rmt_oeminfo' (pid 3146) killing any children in process group
+[  138.030298] init: Service 'mpdecision' is being killed...
+[  138.032281] init: Service 'mpdecision' (pid 189) killed by signal 9
+[  138.032356] init: Service 'mpdecision' (pid 189) killing any children in process group
+[  138.102789] sh: cpu up
+[  138.193031] sh: cpu up
+[  138.369178] sh: cpu up
+[  138.582024] init: Warning!  Service mpdecision needs a SELinux domain defined; please fix!
+[  138.582101] init: Starting service 'mpdecision'...
+[  138.650751] type=1400 audit(1474148695.359:86): avc: denied { unlink } for pid=3217 comm="mpdecision" name="mpctl" dev="tmpfs" ino=3598 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[  138.652454] type=1400 audit(1474148695.359:87): avc: denied { create } for pid=3217 comm="mpdecision" name="mpctl" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[  138.652743] type=1400 audit(1474148695.359:88): avc: denied { setattr } for pid=3217 comm="mpdecision" name="mpctl" dev="tmpfs" ino=23261 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[  138.653023] type=1400 audit(1474148695.359:89): avc: denied { create } for pid=3221 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  138.653768] type=1400 audit(1474148695.359:90): avc: denied { setopt } for pid=3221 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  138.654044] type=1400 audit(1474148695.359:91): avc: denied { bind } for pid=3221 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  138.692558] init: Service 'mpdecision' is being killed...
+[  138.694724] init: Service 'mpdecision' (pid 3217) killed by signal 9
+[  138.694863] init: Service 'mpdecision' (pid 3217) killing any children in process group
+[  138.994514] init: Warning!  Service mpdecision needs a SELinux domain defined; please fix!
+[  138.994579] init: Starting service 'mpdecision'...
+[  139.021213] init: Service 'mpdecision' is being killed...
+[  139.022013] init: Service 'mpdecision' (pid 3236) killed by signal 9
+[  139.022094] init: Service 'mpdecision' (pid 3236) killing any children in process group
+[  139.180393] init: Warning!  Service mpdecision needs a SELinux domain defined; please fix!
+[  139.180483] init: Starting service 'mpdecision'...
+[  139.199071] init: Untracked pid 3158 exited with status 0
+[  140.199943] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  140.200013] init: Starting service 'rmt_oeminfo'...
+[  140.201224] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  140.201301] init: Starting service 'geomagneticd'...
+[  140.231548] init: Service 'rmt_oeminfo' (pid 3282) exited with status 255
+[  140.231621] init: Service 'rmt_oeminfo' (pid 3282) killing any children in process group
+[  140.237263] init: Service 'geomagneticd' (pid 3283) exited with status 1
+[  140.237333] init: Service 'geomagneticd' (pid 3283) killing any children in process group
+[  141.078208] request_suspend_state: wakeup (3->0) at 141083434990 (2016-09-17 21:44:57.801298321 UTC)
+[  141.078264] request_suspend_state: goto late resume.state 2
+[  141.078318] request_suspend_state: end of function. new_state 0, old_state 1, requested_suspend_state 0
+[  141.078513] late_resume: state 2
+[  141.106223] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  141.106241] failed to request gpio_disp_pwr
+[  141.109038] mipi_novatek_nt35516_qhd_lcd_on: E
+[  141.109058] mipi_novatek_nt35516_qhd_lcd_on: display on cmd mode 
+[  141.254908] mipi_novatek_nt35516_qhd_lcd_on: X
+[  141.296639] [elan] elan_ktf2k_ts_resume: enter
+[  141.335173] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  141.335253] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.335414] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  141.335479] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.335514] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  141.335549] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  141.355898] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  141.356018] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.356178] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  141.356209] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.356229] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  141.356244] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  141.375071] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  141.375231] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.375429] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1383c8, irq:75
+[  141.375508] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.375554] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  141.375593] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  141.395039] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  141.397528] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.397683] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  141.397776] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.397814] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  141.397826] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  141.415588] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1300c8, irq:75
+[  141.416036] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.416248] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  141.416956] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  141.417039] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  141.417078] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  141.434889] ------------[ cut here ]------------
+[  141.434926] WARNING: at kernel/irq/manage.c:428 enable_irq+0x60/0x70()
+[  141.434934] Unbalanced enable for IRQ 304
+[  141.434941] Modules linked in:
+[  141.435004] [<c0015108>] (unwind_backtrace+0x0/0x11c) from [<c009991c>] (warn_slowpath_common+0x4c/0x64)
+[  141.435028] [<c009991c>] (warn_slowpath_common+0x4c/0x64) from [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c)
+[  141.435048] [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c) from [<c00f6a74>] (enable_irq+0x60/0x70)
+[  141.435073] [<c00f6a74>] (enable_irq+0x60/0x70) from [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0)
+[  141.435099] [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0) from [<c00d0880>] (late_resume+0xdc/0x140)
+[  141.435124] [<c00d0880>] (late_resume+0xdc/0x140) from [<c00b1e78>] (process_one_work+0x23c/0x444)
+[  141.435148] [<c00b1e78>] (process_one_work+0x23c/0x444) from [<c00b224c>] (worker_thread+0x1a0/0x2c4)
+[  141.435169] [<c00b224c>] (worker_thread+0x1a0/0x2c4) from [<c00b69a8>] (kthread+0x80/0x90)
+[  141.435193] [<c00b69a8>] (kthread+0x80/0x90) from [<c000f3f4>] (kernel_thread_exit+0x0/0x8)
+[  141.435206] ---[ end trace 1ddfecaf7060e2c8 ]---
+[  141.435373] PM: late resume of devices complete after 356.858 msecs
+[  142.994961] BATT: msm_battery_update_psy_status
+[  142.995684] BATT: received, 2, 0, 0x0; 0, 4139, 93, 250; 0, 0, 0
+[  144.877478] type=1400 audit(1474148701.589:92): avc: denied { read write } for pid=529 comm="AudioOut_2" name="msm_pcm_out" dev="tmpfs" ino=4232 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  144.889291] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  144.890984] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  144.891074] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  144.894129] type=1400 audit(1474148701.589:93): avc: denied { open } for pid=529 comm="AudioOut_2" name="msm_pcm_out" dev="tmpfs" ino=4232 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  144.894573] type=1400 audit(1474148701.589:94): avc: denied { ioctl } for pid=529 comm="AudioOut_2" path="/dev/msm_pcm_out" dev="tmpfs" ino=4232 ioctlcmd=6103 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  144.917234] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  144.931789] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  144.932546] type=1400 audit(1474148701.589:95): avc: denied { sys_nice } for pid=529 comm="AudioOut_2" capability=23 scontext=u:r:mediaserver:s0 tcontext=u:r:mediaserver:s0 tclass=capability permissive=1
+[  144.996136] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  144.996253] init: Starting service 'rmt_oeminfo'...
+[  144.998146] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  144.998179] init: Starting service 'geomagneticd'...
+[  145.007526] init: Service 'geomagneticd' (pid 3349) exited with status 1
+[  145.007569] init: Service 'geomagneticd' (pid 3349) killing any children in process group
+[  145.063509] init: Service 'rmt_oeminfo' (pid 3348) exited with status 255
+[  145.063551] init: Service 'rmt_oeminfo' (pid 3348) killing any children in process group
+[  145.072071] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  145.072091] [audio_acdb.c:check_device_change] not pointing to previous valid device detail
+[  145.072144] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  145.073518] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  145.077119] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  145.087058] [audpp.c:audpp_dsp_event] ENABLE
+[  146.871119] rmt_storage_event_write_iovec_cb: write iovec callback received
+[  147.518093] type=1400 audit(1474148704.029:96): avc: denied { sys_nice } for pid=529 comm="AudioOut_2" capability=23 scontext=u:r:mediaserver:s0 tcontext=u:r:mediaserver:s0 tclass=capability permissive=1
+[  148.532428] rmt_storage_ioctl: send status ioctl
+[  150.066223] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  150.066341] init: Starting service 'rmt_oeminfo'...
+[  150.075849] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  150.075923] init: Starting service 'geomagneticd'...
+[  150.100036] init: Service 'geomagneticd' (pid 3407) exited with status 1
+[  150.100203] init: Service 'geomagneticd' (pid 3407) killing any children in process group
+[  150.311298] init: Service 'rmt_oeminfo' (pid 3406) exited with status 255
+[  150.311431] init: Service 'rmt_oeminfo' (pid 3406) killing any children in process group
+[  152.457108] request_suspend_state: sleep (0->3) at 152462334989 (2016-09-17 21:45:09.180199987 UTC)
+[  152.457163] request_suspend_state: goto late resume.state 1
+[  152.457199] request_suspend_state: end of function. new_state 3, old_state 0, requested_suspend_state 3
+[  152.457268] early_suspend: state 1
+[  152.457314] [elan] elan_ktf2k_ts_suspend: enter
+[  152.495159] mipi_novatek_nt35516_qhd_lcd_off: E
+[  152.644919] mipi_novatek_nt35516_qhd_lcd_off: X
+[  152.646616] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  152.646629] failed to request gpio_disp_pwr
+[  152.646709] PM: early suspend of devices complete after 189.443 msecs
+[  153.025278] BATT: msm_battery_update_psy_status
+[  153.026071] BATT: received, 2, 0, 0x0; 0, 4115, 93, 250; 0, 0, 0
+[  153.035581] type=1400 audit(1474148709.739:97): avc: denied { read } for pid=215 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  153.043133] type=1400 audit(1474148709.739:98): avc: denied { read } for pid=3250 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  155.232783] [audpp.c:audpp_dsp_event] DISABLE
+[  155.232858] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  155.232893] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  155.234068] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  155.234129] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  155.235781] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  155.246123] [audmgr.c:process_audmgr_callback] DISABLED
+[  155.316034] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  155.316118] init: Starting service 'rmt_oeminfo'...
+[  155.317866] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  155.317943] init: Starting service 'geomagneticd'...
+[  155.329359] init: Service 'geomagneticd' (pid 3486) exited with status 1
+[  155.329434] init: Service 'geomagneticd' (pid 3486) killing any children in process group
+[  155.361436] init: Service 'rmt_oeminfo' (pid 3485) exited with status 255
+[  155.361508] init: Service 'rmt_oeminfo' (pid 3485) killing any children in process group
+[  160.362389] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  160.362458] init: Starting service 'rmt_oeminfo'...
+[  160.363536] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  160.363611] init: Starting service 'geomagneticd'...
+[  160.366474] init: Service 'geomagneticd' (pid 3550) exited with status 1
+[  160.366546] init: Service 'geomagneticd' (pid 3550) killing any children in process group
+[  160.391183] init: Service 'rmt_oeminfo' (pid 3549) exited with status 255
+[  160.391253] init: Service 'rmt_oeminfo' (pid 3549) killing any children in process group
+[  163.034836] BATT: msm_battery_update_psy_status
+[  163.035508] BATT: received, 2, 0, 0x0; 0, 4142, 93, 250; 0, 0, 0
+[  165.392298] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  165.392369] init: Starting service 'rmt_oeminfo'...
+[  165.393801] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  165.393878] init: Starting service 'geomagneticd'...
+[  165.618149] init: Service 'geomagneticd' (pid 3570) exited with status 1
+[  165.618226] init: Service 'geomagneticd' (pid 3570) killing any children in process group
+[  165.666721] init: Service 'rmt_oeminfo' (pid 3569) exited with status 255
+[  165.666794] init: Service 'rmt_oeminfo' (pid 3569) killing any children in process group
+[  170.667694] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  170.667761] init: Starting service 'rmt_oeminfo'...
+[  170.670928] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  170.670998] init: Starting service 'geomagneticd'...
+[  170.675181] init: Service 'geomagneticd' (pid 3572) exited with status 1
+[  170.675263] init: Service 'geomagneticd' (pid 3572) killing any children in process group
+[  170.707048] init: Service 'rmt_oeminfo' (pid 3571) exited with status 255
+[  170.707133] init: Service 'rmt_oeminfo' (pid 3571) killing any children in process group
+[  173.054943] BATT: msm_battery_update_psy_status
+[  175.708124] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  175.708196] init: Starting service 'rmt_oeminfo'...
+[  175.710683] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  175.710753] init: Starting service 'geomagneticd'...
+[  175.719228] init: Service 'geomagneticd' (pid 3580) exited with status 1
+[  175.719303] init: Service 'geomagneticd' (pid 3580) killing any children in process group
+[  175.744243] init: Service 'rmt_oeminfo' (pid 3579) exited with status 255
+[  175.744313] init: Service 'rmt_oeminfo' (pid 3579) killing any children in process group
+[  180.745203] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  180.745271] init: Starting service 'rmt_oeminfo'...
+[  180.746343] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  180.746419] init: Starting service 'geomagneticd'...
+[  180.757161] init: Service 'geomagneticd' (pid 3582) exited with status 1
+[  180.757239] init: Service 'geomagneticd' (pid 3582) killing any children in process group
+[  180.773219] init: Service 'rmt_oeminfo' (pid 3581) exited with status 255
+[  180.773288] init: Service 'rmt_oeminfo' (pid 3581) killing any children in process group
+[  183.074801] BATT: msm_battery_update_psy_status
+[  183.075454] BATT: received, 2, 0, 0x0; 0, 4163, 93, 250; 0, 0, 0
+[  185.774698] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  185.775021] init: Starting service 'rmt_oeminfo'...
+[  185.777749] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  185.777976] init: Starting service 'geomagneticd'...
+[  185.786393] init: Service 'geomagneticd' (pid 3584) exited with status 1
+[  185.786529] init: Service 'geomagneticd' (pid 3584) killing any children in process group
+[  185.827313] init: Service 'rmt_oeminfo' (pid 3583) exited with status 255
+[  185.827384] init: Service 'rmt_oeminfo' (pid 3583) killing any children in process group
+[  190.828451] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  190.828528] init: Starting service 'rmt_oeminfo'...
+[  190.829916] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  190.829991] init: Starting service 'geomagneticd'...
+[  190.833354] init: Service 'geomagneticd' (pid 3607) exited with status 1
+[  190.833438] init: Service 'geomagneticd' (pid 3607) killing any children in process group
+[  190.865821] init: Service 'rmt_oeminfo' (pid 3606) exited with status 255
+[  190.865904] init: Service 'rmt_oeminfo' (pid 3606) killing any children in process group
+[  193.094926] BATT: msm_battery_update_psy_status
+[  193.095773] BATT: received, 2, 0, 0x0; 0, 4147, 93, 250; 0, 0, 0
+[  195.867543] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  195.867739] init: Starting service 'rmt_oeminfo'...
+[  195.873413] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  195.873609] init: Starting service 'geomagneticd'...
+[  195.904694] init: Service 'geomagneticd' (pid 3621) exited with status 1
+[  195.905008] init: Service 'geomagneticd' (pid 3621) killing any children in process group
+[  195.942859] init: Service 'rmt_oeminfo' (pid 3620) exited with status 255
+[  195.942939] init: Service 'rmt_oeminfo' (pid 3620) killing any children in process group
+[  200.944688] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  200.945003] init: Starting service 'rmt_oeminfo'...
+[  200.949131] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  200.949319] init: Starting service 'geomagneticd'...
+[  200.968191] init: Service 'geomagneticd' (pid 3627) exited with status 1
+[  200.968334] init: Service 'geomagneticd' (pid 3627) killing any children in process group
+[  201.002218] init: Service 'rmt_oeminfo' (pid 3626) exited with status 255
+[  201.002288] init: Service 'rmt_oeminfo' (pid 3626) killing any children in process group
+[  203.115038] BATT: msm_battery_update_psy_status
+[  203.116924] BATT: received, 2, 0, 0x0; 0, 4183, 93, 250; 0, 0, 0
+[  205.003923] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  205.004113] init: Starting service 'rmt_oeminfo'...
+[  205.009148] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  205.009364] init: Starting service 'geomagneticd'...
+[  205.040643] init: Service 'geomagneticd' (pid 3629) exited with status 1
+[  205.040766] init: Service 'geomagneticd' (pid 3629) killing any children in process group
+[  205.062799] init: Service 'rmt_oeminfo' (pid 3628) exited with status 255
+[  205.062873] init: Service 'rmt_oeminfo' (pid 3628) killing any children in process group
+[  210.063891] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  210.063973] init: Starting service 'rmt_oeminfo'...
+[  210.068423] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  210.068508] init: Starting service 'geomagneticd'...
+[  210.086659] init: Service 'geomagneticd' (pid 3642) exited with status 1
+[  210.086736] init: Service 'geomagneticd' (pid 3642) killing any children in process group
+[  210.113009] init: Service 'rmt_oeminfo' (pid 3641) exited with status 255
+[  210.113083] init: Service 'rmt_oeminfo' (pid 3641) killing any children in process group
+[  213.134951] BATT: msm_battery_update_psy_status
+[  213.136078] BATT: received, 2, 0, 0x0; 0, 4185, 93, 250; 0, 0, 0
+[  215.115141] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  215.115344] init: Starting service 'rmt_oeminfo'...
+[  215.119779] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  215.119976] init: Starting service 'geomagneticd'...
+[  215.127106] init: Service 'geomagneticd' (pid 3649) exited with status 1
+[  215.127298] init: Service 'geomagneticd' (pid 3649) killing any children in process group
+[  215.179349] init: Service 'rmt_oeminfo' (pid 3648) exited with status 255
+[  215.179419] init: Service 'rmt_oeminfo' (pid 3648) killing any children in process group
+[  220.180346] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  220.180414] init: Starting service 'rmt_oeminfo'...
+[  220.200683] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  220.200876] init: Starting service 'geomagneticd'...
+[  220.228091] init: Service 'geomagneticd' (pid 3658) exited with status 1
+[  220.228239] init: Service 'geomagneticd' (pid 3658) killing any children in process group
+[  220.269738] init: Service 'rmt_oeminfo' (pid 3657) exited with status 255
+[  220.269819] init: Service 'rmt_oeminfo' (pid 3657) killing any children in process group
+[  223.154838] BATT: msm_battery_update_psy_status
+[  225.271449] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  225.271638] init: Starting service 'rmt_oeminfo'...
+[  225.279298] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  225.279493] init: Starting service 'geomagneticd'...
+[  225.298339] init: Service 'geomagneticd' (pid 3666) exited with status 1
+[  225.298486] init: Service 'geomagneticd' (pid 3666) killing any children in process group
+[  225.335209] init: Service 'rmt_oeminfo' (pid 3665) exited with status 255
+[  225.335279] init: Service 'rmt_oeminfo' (pid 3665) killing any children in process group
+[  226.488594] request_suspend_state: wakeup (3->0) at 226493819982 (2016-09-17 21:46:23.211684980 UTC)
+[  226.488656] request_suspend_state: goto late resume.state 2
+[  226.488711] request_suspend_state: end of function. new_state 0, old_state 1, requested_suspend_state 0
+[  226.488846] late_resume: state 2
+[  226.518288] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  226.518303] failed to request gpio_disp_pwr
+[  226.521139] mipi_novatek_nt35516_qhd_lcd_on: E
+[  226.521161] mipi_novatek_nt35516_qhd_lcd_on: display on cmd mode 
+[  226.665231] mipi_novatek_nt35516_qhd_lcd_on: X
+[  226.705846] [elan] elan_ktf2k_ts_resume: enter
+[  226.745364] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  226.747066] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.747324] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  226.747779] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.747849] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  226.747888] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  226.765189] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1300c8, irq:75
+[  226.766474] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.766683] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  226.766751] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.766789] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  226.766824] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  226.785141] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  226.785279] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.785468] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  226.785564] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.785606] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  226.785644] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  226.805114] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  226.805221] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.805381] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  226.805496] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.805541] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  226.805578] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  226.824928] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  226.824956] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.825084] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  226.825108] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  226.825121] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  226.825131] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  226.844876] ------------[ cut here ]------------
+[  226.844918] WARNING: at kernel/irq/manage.c:428 enable_irq+0x60/0x70()
+[  226.844928] Unbalanced enable for IRQ 304
+[  226.844934] Modules linked in:
+[  226.844986] [<c0015108>] (unwind_backtrace+0x0/0x11c) from [<c009991c>] (warn_slowpath_common+0x4c/0x64)
+[  226.845008] [<c009991c>] (warn_slowpath_common+0x4c/0x64) from [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c)
+[  226.845029] [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c) from [<c00f6a74>] (enable_irq+0x60/0x70)
+[  226.845051] [<c00f6a74>] (enable_irq+0x60/0x70) from [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0)
+[  226.845074] [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0) from [<c00d0880>] (late_resume+0xdc/0x140)
+[  226.845096] [<c00d0880>] (late_resume+0xdc/0x140) from [<c00b1e78>] (process_one_work+0x23c/0x444)
+[  226.845118] [<c00b1e78>] (process_one_work+0x23c/0x444) from [<c00b224c>] (worker_thread+0x1a0/0x2c4)
+[  226.845139] [<c00b224c>] (worker_thread+0x1a0/0x2c4) from [<c00b69a8>] (kthread+0x80/0x90)
+[  226.845161] [<c00b69a8>] (kthread+0x80/0x90) from [<c000f3f4>] (kernel_thread_exit+0x0/0x8)
+[  226.845173] ---[ end trace 1ddfecaf7060e2c9 ]---
+[  226.845776] PM: late resume of devices complete after 356.913 msecs
+[  226.906671] type=1400 audit(1474148783.579:99): avc: denied { write } for pid=256 comm="rild" name="rild_pri_sync" dev="tmpfs" ino=4849 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[  228.357138] type=1400 audit(1474148785.069:100): avc: denied { read write } for pid=529 comm="AudioOut_2" name="msm_pcm_out" dev="tmpfs" ino=4232 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  228.357768] type=1400 audit(1474148785.069:101): avc: denied { open } for pid=529 comm="AudioOut_2" name="msm_pcm_out" dev="tmpfs" ino=4232 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  228.358183] type=1400 audit(1474148785.069:102): avc: denied { ioctl } for pid=529 comm="AudioOut_2" path="/dev/msm_pcm_out" dev="tmpfs" ino=4232 ioctlcmd=6103 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[  228.368266] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  228.369334] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  228.369389] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  228.397919] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  228.410401] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  228.550878] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  228.550986] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  228.552359] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  228.556291] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  228.564706] [audpp.c:audpp_dsp_event] ENABLE
+[  230.163789] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  230.165218] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  230.192259] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  230.192594] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  230.194401] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.194523] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  230.197048] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.198581] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  230.199686] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.199801] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  230.201248] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.252804] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  230.253666] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  230.253801] [audmgr.c:audmgr_enable] session 0xc09aef4c
+[  230.254608] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000001
+[  230.254676] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  230.261083] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  230.261188] [adsp.c:msm_adsp_get] opening module AUDPREPROCTASK
+[  230.264646] [adsp.c:msm_adsp_enable] enable 'AUDPREPROCTASK'state[0] id[17227132]
+[  230.265766] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPREPROCTASK: READY
+[  230.265839] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 65535d
+[  230.265884] [adsp.c:msm_adsp_enable] enable 'AUDREC1TASK'state[0] id[17394032]
+[  230.266578] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  230.267481] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  230.268536] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  230.268811] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDREC1TASK: READY
+[  230.268914] [audio_pcm_in.c:audrec_dsp_event] CFG ENABLED
+[  230.269033] [audio_pcm_in.c:audrec_dsp_event] PARAM CFG DONE
+[  230.269188] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  230.270956] [audio_acdb.c:acdb_get_calibration] ACDB=> Device table RPC failure result = -8
+[  230.271006] [audio_acdb.c:handle_audpreproc_cb] failed to get calibration data
+[  230.281079] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.281958] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.282836] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.283418] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  230.284373] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  230.285383] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  230.287028] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  230.288399] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.288488] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.288524] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.289748] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  230.290109] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.290149] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.290188] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  230.972713] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  230.972793] init: Starting service 'rmt_oeminfo'...
+[  230.975731] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  230.975804] init: Starting service 'geomagneticd'...
+[  230.992509] init: Service 'geomagneticd' (pid 3701) exited with status 1
+[  230.992584] init: Service 'geomagneticd' (pid 3701) killing any children in process group
+[  230.994016] type=1400 audit(1474148787.689:103): avc: denied { execute_no_trans } for pid=3700 comm="init" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  231.007016] type=1400 audit(1474148787.719:104): avc: denied { execmod } for pid=3700 comm="rmt_oeminfo" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=23446 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  231.063843] init: Service 'rmt_oeminfo' (pid 3700) exited with status 255
+[  231.063921] init: Service 'rmt_oeminfo' (pid 3700) killing any children in process group
+[  232.560439] [audpp.c:audpp_dsp_event] DISABLE
+[  232.560534] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  232.560569] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  232.566449] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  232.566523] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  232.569638] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  232.584753] [audmgr.c:process_audmgr_callback] DISABLED
+[  233.174948] BATT: msm_battery_update_psy_status
+[  233.175798] BATT: received, 2, 0, 0x0; 0, 4121, 93, 250; 0, 0, 0
+[  235.065763] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  235.065869] init: Starting service 'rmt_oeminfo'...
+[  235.079236] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  235.079286] init: Starting service 'geomagneticd'...
+[  235.097654] init: Service 'geomagneticd' (pid 3710) exited with status 1
+[  235.097786] init: Service 'geomagneticd' (pid 3710) killing any children in process group
+[  235.119088] init: Service 'rmt_oeminfo' (pid 3709) exited with status 255
+[  235.119128] init: Service 'rmt_oeminfo' (pid 3709) killing any children in process group
+[  237.466948] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  237.468071] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  237.468119] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  237.474381] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  237.474483] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  237.475839] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  237.477574] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  237.485646] [audpp.c:audpp_dsp_event] ENABLE
+[  237.767596] [adsp.c:msm_adsp_disable] disable 'AUDREC1TASK'
+[  237.767659] [audio_pcm_in.c:audrec_dsp_event] CFG SLEEP
+[  237.769418] [adsp.c:msm_adsp_disable] disable 'AUDPREPROCTASK'
+[  237.770761] [adsp.c:msm_adsp_put] closing module AUDPREPROCTASK
+[  237.770811] [audpreproc.c:get_audrec_session_info] No aud pre session active
+[  237.770826] [audmgr.c:audmgr_disable] session 0xc09aef4c
+[  237.773371] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  237.783704] [audmgr.c:process_audmgr_callback] DISABLED
+[  237.783779] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  237.784266] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  237.786201] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  237.786481] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  237.790801] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  237.792394] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  237.792424] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  237.797349] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  237.803731] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  240.120188] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  240.120256] init: Starting service 'rmt_oeminfo'...
+[  240.121346] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  240.121421] init: Starting service 'geomagneticd'...
+[  240.127408] init: Service 'geomagneticd' (pid 3738) exited with status 1
+[  240.127486] init: Service 'geomagneticd' (pid 3738) killing any children in process group
+[  240.154161] init: Service 'rmt_oeminfo' (pid 3737) exited with status 255
+[  240.154246] init: Service 'rmt_oeminfo' (pid 3737) killing any children in process group
+[  240.521524] [audpp.c:audpp_dsp_event] DISABLE
+[  240.521711] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  240.521804] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  240.523331] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  240.523456] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  240.525791] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  240.536434] [audmgr.c:process_audmgr_callback] DISABLED
+[  240.724163] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  240.725449] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  240.726064] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  240.731973] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  240.732438] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  240.734481] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  240.737186] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  240.745293] [audpp.c:audpp_dsp_event] ENABLE
+[  241.948801] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  241.950449] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  241.978349] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  241.979006] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  241.981323] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  241.981431] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  241.983129] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  241.997388] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  241.998558] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  241.998743] [audmgr.c:audmgr_enable] session 0xc09aef4c
+[  241.999646] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000001
+[  242.000416] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  242.006434] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  242.006516] [adsp.c:msm_adsp_get] opening module AUDPREPROCTASK
+[  242.010071] [adsp.c:msm_adsp_enable] enable 'AUDPREPROCTASK'state[0] id[17227132]
+[  242.011483] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPREPROCTASK: READY
+[  242.011584] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 65535d
+[  242.011626] [adsp.c:msm_adsp_enable] enable 'AUDREC1TASK'state[0] id[17394032]
+[  242.013279] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDREC1TASK: READY
+[  242.013391] [audio_pcm_in.c:audrec_dsp_event] CFG ENABLED
+[  242.013479] [audio_pcm_in.c:audrec_dsp_event] PARAM CFG DONE
+[  242.016761] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  242.016903] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  242.016949] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  243.195106] BATT: msm_battery_update_psy_status
+[  243.196618] BATT: received, 2, 0, 0x0; 0, 4106, 93, 250; 0, 0, 0
+[  243.781406] [audpp.c:audpp_dsp_event] DISABLE
+[  243.781463] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  243.781474] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  243.782848] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  243.782916] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  243.787478] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  243.796043] [audmgr.c:process_audmgr_callback] DISABLED
+[  245.431889] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  245.432006] init: Starting service 'rmt_oeminfo'...
+[  245.516338] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  245.516448] init: Starting service 'geomagneticd'...
+[  245.522919] init: Service 'geomagneticd' (pid 3762) exited with status 1
+[  245.522964] init: Service 'geomagneticd' (pid 3762) killing any children in process group
+[  245.572459] init: Service 'rmt_oeminfo' (pid 3761) exited with status 255
+[  245.572573] init: Service 'rmt_oeminfo' (pid 3761) killing any children in process group
+[  247.100264] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  247.101658] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  247.102533] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  247.108686] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  247.108901] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  247.114211] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  247.117458] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  247.125788] [audpp.c:audpp_dsp_event] ENABLE
+[  250.027903] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  250.027986] init: Starting service 'rmt_oeminfo'...
+[  250.161818] [audpp.c:audpp_dsp_event] DISABLE
+[  250.161933] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  250.161971] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  250.164051] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  250.164153] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  250.166961] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  250.178453] [audmgr.c:process_audmgr_callback] DISABLED
+[  250.197279] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  250.197408] init: Starting service 'geomagneticd'...
+[  250.206886] init: Service 'geomagneticd' (pid 3769) exited with status 1
+[  250.206931] init: Service 'geomagneticd' (pid 3769) killing any children in process group
+[  250.263098] init: Service 'rmt_oeminfo' (pid 3768) exited with status 255
+[  250.263211] init: Service 'rmt_oeminfo' (pid 3768) killing any children in process group
+[  252.919771] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  252.923134] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  252.924483] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  252.930961] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  252.931009] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  252.932566] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  252.934726] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  252.942968] [audpp.c:audpp_dsp_event] ENABLE
+[  253.216688] BATT: msm_battery_update_psy_status
+[  253.217498] BATT: received, 2, 0, 0x0; 0, 4123, 93, 250; 0, 0, 0
+[  255.264993] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  255.268741] init: Starting service 'rmt_oeminfo'...
+[  255.272316] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  255.272418] init: Starting service 'geomagneticd'...
+[  255.278703] init: Service 'geomagneticd' (pid 3788) exited with status 1
+[  255.278806] init: Service 'geomagneticd' (pid 3788) killing any children in process group
+[  255.313191] init: Service 'rmt_oeminfo' (pid 3787) exited with status 255
+[  255.313284] init: Service 'rmt_oeminfo' (pid 3787) killing any children in process group
+[  255.978636] [audpp.c:audpp_dsp_event] DISABLE
+[  255.978729] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  255.978766] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  255.981751] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  255.981841] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  255.984934] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  255.995328] [audmgr.c:process_audmgr_callback] DISABLED
+[  258.039594] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  258.041406] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  258.042054] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  258.049848] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  258.050024] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  258.052583] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  258.054486] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  258.062853] [audpp.c:audpp_dsp_event] ENABLE
+[  258.338849] [adsp.c:msm_adsp_disable] disable 'AUDREC1TASK'
+[  258.338959] [audio_pcm_in.c:audrec_dsp_event] CFG SLEEP
+[  258.340946] [adsp.c:msm_adsp_disable] disable 'AUDPREPROCTASK'
+[  258.342971] [adsp.c:msm_adsp_put] closing module AUDPREPROCTASK
+[  258.343059] [audpreproc.c:get_audrec_session_info] No aud pre session active
+[  258.343096] [audmgr.c:audmgr_disable] session 0xc09aef4c
+[  258.346178] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  258.356576] [audmgr.c:process_audmgr_callback] DISABLED
+[  258.356631] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  258.357008] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  258.359051] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  258.359106] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  258.360836] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  258.362844] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  258.364356] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  258.371274] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  258.373088] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  260.315918] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  260.315969] init: Starting service 'rmt_oeminfo'...
+[  260.329799] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  260.329879] init: Starting service 'geomagneticd'...
+[  260.358613] init: Service 'geomagneticd' (pid 3817) exited with status 1
+[  260.358658] init: Service 'geomagneticd' (pid 3817) killing any children in process group
+[  260.383699] init: Service 'rmt_oeminfo' (pid 3816) exited with status 255
+[  260.383741] init: Service 'rmt_oeminfo' (pid 3816) killing any children in process group
+[  261.098304] [audpp.c:audpp_dsp_event] DISABLE
+[  261.098394] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  261.098426] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  261.099361] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  261.099409] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  261.100744] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  261.111323] [audmgr.c:process_audmgr_callback] DISABLED
+[  263.235769] BATT: msm_battery_update_psy_status
+[  263.236988] BATT: received, 2, 0, 0x0; 0, 4133, 92, 250; 0, 0, 0
+[  265.385553] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  265.385653] init: Starting service 'rmt_oeminfo'...
+[  265.400043] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  265.400118] init: Starting service 'geomagneticd'...
+[  265.430283] init: Service 'geomagneticd' (pid 3830) exited with status 1
+[  265.430369] init: Service 'geomagneticd' (pid 3830) killing any children in process group
+[  265.597653] init: Service 'rmt_oeminfo' (pid 3829) exited with status 255
+[  265.597743] init: Service 'rmt_oeminfo' (pid 3829) killing any children in process group
+[  268.772741] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  268.773856] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  268.773908] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  268.798948] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  268.811009] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  268.950266] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  268.950384] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  268.952644] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  268.954401] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  268.962624] [audpp.c:audpp_dsp_event] ENABLE
+[  270.598976] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  270.599051] init: Starting service 'rmt_oeminfo'...
+[  270.600438] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  270.600511] init: Starting service 'geomagneticd'...
+[  270.611271] init: Service 'geomagneticd' (pid 3849) exited with status 1
+[  270.611361] init: Service 'geomagneticd' (pid 3849) killing any children in process group
+[  270.660383] init: Service 'rmt_oeminfo' (pid 3848) exited with status 255
+[  270.660491] init: Service 'rmt_oeminfo' (pid 3848) killing any children in process group
+[  271.998348] [audpp.c:audpp_dsp_event] DISABLE
+[  271.998434] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  271.998471] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  272.000048] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  272.000078] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  272.003203] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  272.013768] [audmgr.c:process_audmgr_callback] DISABLED
+[  273.254866] BATT: msm_battery_update_psy_status
+[  273.255658] BATT: received, 2, 0, 0x0; 0, 4142, 92, 250; 0, 0, 0
+[  274.931513] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  274.932959] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  274.933136] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  274.939361] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  274.939463] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  274.940683] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  274.941689] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  274.949666] [audpp.c:audpp_dsp_event] ENABLE
+[  275.662081] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  275.662114] init: Starting service 'rmt_oeminfo'...
+[  275.663194] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  275.663223] init: Starting service 'geomagneticd'...
+[  275.671833] init: Service 'geomagneticd' (pid 3873) exited with status 1
+[  275.671918] init: Service 'geomagneticd' (pid 3873) killing any children in process group
+[  275.742526] init: Service 'rmt_oeminfo' (pid 3872) exited with status 255
+[  275.742568] init: Service 'rmt_oeminfo' (pid 3872) killing any children in process group
+[  278.615391] [audpp.c:audpp_dsp_event] DISABLE
+[  278.615479] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  278.615516] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  278.619054] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  278.619178] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  278.637689] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  278.651606] [audmgr.c:process_audmgr_callback] DISABLED
+[  280.743608] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  280.743704] init: Starting service 'rmt_oeminfo'...
+[  280.753329] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  280.753451] init: Starting service 'geomagneticd'...
+[  280.760228] init: Service 'geomagneticd' (pid 3887) exited with status 1
+[  280.760309] init: Service 'geomagneticd' (pid 3887) killing any children in process group
+[  280.806091] init: Service 'rmt_oeminfo' (pid 3886) exited with status 255
+[  280.806164] init: Service 'rmt_oeminfo' (pid 3886) killing any children in process group
+[  282.376386] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  282.377954] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  282.380864] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  282.406179] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  282.419168] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  282.559024] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  282.559103] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  282.560276] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  282.561471] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  282.569703] [audpp.c:audpp_dsp_event] ENABLE
+[  283.275026] BATT: msm_battery_update_psy_status
+[  283.275961] BATT: received, 2, 0, 0x0; 0, 4082, 92, 250; 0, 0, 0
+[  285.608809] [audpp.c:audpp_dsp_event] DISABLE
+[  285.608934] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  285.608968] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  285.610959] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  285.611043] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  285.614476] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  285.625136] [audmgr.c:process_audmgr_callback] DISABLED
+[  285.808058] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  285.808173] init: Starting service 'rmt_oeminfo'...
+[  285.812729] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  285.812864] init: Starting service 'geomagneticd'...
+[  285.827848] init: Service 'geomagneticd' (pid 3909) exited with status 1
+[  285.827971] init: Service 'geomagneticd' (pid 3909) killing any children in process group
+[  285.898374] init: Service 'rmt_oeminfo' (pid 3908) exited with status 255
+[  285.898414] init: Service 'rmt_oeminfo' (pid 3908) killing any children in process group
+[  286.533019] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  286.534281] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  286.536094] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  286.536389] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  286.539984] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  286.544616] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  286.547783] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  286.614501] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  286.616784] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  286.617026] [audmgr.c:audmgr_enable] session 0xc09aef4c
+[  286.618608] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  286.619591] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  286.637269] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  286.637364] [adsp.c:msm_adsp_get] opening module AUDPREPROCTASK
+[  286.639241] [adsp.c:msm_adsp_enable] enable 'AUDPREPROCTASK'state[0] id[17227132]
+[  286.642958] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPREPROCTASK: READY
+[  286.643069] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  286.643089] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 65535d
+[  286.643221] [adsp.c:msm_adsp_enable] enable 'AUDREC1TASK'state[0] id[17394032]
+[  286.647384] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDREC1TASK: READY
+[  286.647598] [audio_pcm_in.c:audrec_dsp_event] CFG ENABLED
+[  286.647736] [audio_pcm_in.c:audrec_dsp_event] PARAM CFG DONE
+[  286.650608] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  286.650749] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  286.650801] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  286.656468] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  286.657551] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  289.743651] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  289.744413] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000001
+[  289.744568] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  289.761444] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  289.761506] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  289.762466] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  289.763698] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  289.767026] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  289.767658] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  289.768284] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  289.768829] [audmgr.c:process_audmgr_callback] rpc DEVICE_CONFIG
+[  289.771713] [audpp.c:audpp_dsp_event] ENABLE
+[  289.780324] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  289.780831] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  289.781359] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  289.781901] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  289.782484] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  289.782578] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.782618] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.782654] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.782959] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  289.783466] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  289.783538] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.783571] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.783606] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  289.783933] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  290.249004] [adsp.c:msm_adsp_disable] disable 'AUDREC1TASK'
+[  290.249056] [audio_pcm_in.c:audrec_dsp_event] CFG SLEEP
+[  290.250149] [adsp.c:msm_adsp_disable] disable 'AUDPREPROCTASK'
+[  290.251039] [adsp.c:msm_adsp_put] closing module AUDPREPROCTASK
+[  290.251089] [audpreproc.c:get_audrec_session_info] No aud pre session active
+[  290.251121] [audmgr.c:audmgr_disable] session 0xc09aef4c
+[  290.252459] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  290.263476] [audmgr.c:process_audmgr_callback] DISABLED
+[  290.263591] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  290.264161] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  290.267224] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  290.267386] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  290.269744] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  290.281719] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  290.283494] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  290.289593] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  290.291688] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  290.899493] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  290.899564] init: Starting service 'rmt_oeminfo'...
+[  290.900718] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  290.900799] init: Starting service 'geomagneticd'...
+[  290.908934] init: Service 'geomagneticd' (pid 3925) exited with status 1
+[  290.909028] init: Service 'geomagneticd' (pid 3925) killing any children in process group
+[  290.931764] init: Service 'rmt_oeminfo' (pid 3924) exited with status 255
+[  290.931846] init: Service 'rmt_oeminfo' (pid 3924) killing any children in process group
+[  292.806921] [audpp.c:audpp_dsp_event] DISABLE
+[  292.806961] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  292.806974] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  292.808118] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  292.808151] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  292.810056] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  292.820704] [audmgr.c:process_audmgr_callback] DISABLED
+[  293.295056] BATT: msm_battery_update_psy_status
+[  293.295908] BATT: received, 2, 0, 0x0; 0, 4108, 92, 250; 0, 0, 0
+[  295.099691] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  295.101529] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  295.101706] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  295.108181] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  295.108301] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  295.109991] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  295.115411] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  295.123706] [audpp.c:audpp_dsp_event] ENABLE
+[  295.933151] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  295.933181] init: Starting service 'rmt_oeminfo'...
+[  295.952888] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  295.952921] init: Starting service 'geomagneticd'...
+[  296.032096] init: Service 'geomagneticd' (pid 3945) exited with status 1
+[  296.032174] init: Service 'geomagneticd' (pid 3945) killing any children in process group
+[  296.051526] init: Service 'rmt_oeminfo' (pid 3944) exited with status 255
+[  296.051568] init: Service 'rmt_oeminfo' (pid 3944) killing any children in process group
+[  298.158893] [audpp.c:audpp_dsp_event] DISABLE
+[  298.158954] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  298.158988] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  298.160424] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  298.160478] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  298.161859] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  298.172141] [audmgr.c:process_audmgr_callback] DISABLED
+[  300.052659] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  300.052688] init: Starting service 'rmt_oeminfo'...
+[  300.085646] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  300.085753] init: Starting service 'geomagneticd'...
+[  300.103484] init: Service 'geomagneticd' (pid 3954) exited with status 1
+[  300.103556] init: Service 'geomagneticd' (pid 3954) killing any children in process group
+[  300.108033] init: Service 'rmt_oeminfo' (pid 3953) exited with status 255
+[  300.108104] init: Service 'rmt_oeminfo' (pid 3953) killing any children in process group
+[  300.544143] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  300.546304] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  300.558248] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  300.559118] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  300.561801] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  300.565963] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  300.567338] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  300.593318] [adsp.c:msm_adsp_get] opening module AUDREC1TASK
+[  300.595801] [audio_pcm_in.c:audpcm_in_open] O/P buffers:valid phy: 29f00000 sz: 9000
+[  300.596076] [audmgr.c:audmgr_enable] session 0xc09aef4c
+[  300.603619] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000000
+[  300.603701] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  300.611709] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  300.611769] [adsp.c:msm_adsp_get] opening module AUDPREPROCTASK
+[  300.624204] [adsp.c:msm_adsp_enable] enable 'AUDPREPROCTASK'state[0] id[17227132]
+[  300.625566] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPREPROCTASK: READY
+[  300.625681] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 65535d
+[  300.625791] [adsp.c:msm_adsp_enable] enable 'AUDREC1TASK'state[0] id[17394032]
+[  300.628083] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDREC1TASK: READY
+[  300.628403] [audio_pcm_in.c:audrec_dsp_event] CFG ENABLED
+[  300.628539] [audio_pcm_in.c:audrec_dsp_event] PARAM CFG DONE
+[  300.628609] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  300.628691] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  300.628756] [audpreproc.c:audpreproc_dsp_event] audpreproc_dsp_event 1d
+[  301.293929] [audmgr.c:audmgr_enable] session 0xc09b0dc0
+[  301.295778] [audmgr.c:process_audmgr_callback] rpc READY handle=0x00000001
+[  301.295846] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  301.302143] [audmgr.c:process_audmgr_callback] rpc CODEC_CONFIG
+[  301.302319] [adsp.c:msm_adsp_get] opening module AUDPPTASK
+[  301.304941] [adsp.c:msm_adsp_enable] enable 'AUDPPTASK'state[0] id[17227122]
+[  301.307011] [adsp.c:handle_adsp_rtos_mtoa_app] module AUDPPTASK: READY
+[  301.315196] [audpp.c:audpp_dsp_event] ENABLE
+[  301.594508] request_suspend_state: sleep (0->3) at 301599729974 (2016-09-17 21:47:38.317593305 UTC)
+[  301.594581] request_suspend_state: goto late resume.state 1
+[  301.594638] request_suspend_state: end of function. new_state 3, old_state 0, requested_suspend_state 3
+[  301.595106] early_suspend: state 1
+[  301.595149] [elan] elan_ktf2k_ts_suspend: enter
+[  301.625149] mipi_novatek_nt35516_qhd_lcd_off: E
+[  301.774891] mipi_novatek_nt35516_qhd_lcd_off: X
+[  301.776726] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  301.776739] failed to request gpio_disp_pwr
+[  301.776809] PM: early suspend of devices complete after 181.711 msecs
+[  302.626243] [adsp.c:msm_adsp_disable] disable 'AUDREC1TASK'
+[  302.626349] [audio_pcm_in.c:audrec_dsp_event] CFG SLEEP
+[  302.628056] [adsp.c:msm_adsp_disable] disable 'AUDPREPROCTASK'
+[  302.629729] [adsp.c:msm_adsp_put] closing module AUDPREPROCTASK
+[  302.629839] [audpreproc.c:get_audrec_session_info] No aud pre session active
+[  302.629913] [audmgr.c:audmgr_disable] session 0xc09aef4c
+[  302.632463] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  302.643696] [audmgr.c:process_audmgr_callback] DISABLED
+[  302.643811] [adsp.c:msm_adsp_put] closing module AUDREC1TASK
+[  302.644506] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  302.648626] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  302.648871] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  302.650636] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  302.652261] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 1
+[  302.653364] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  302.653551] [snd_cad.c:snd_cad_ioctl] snd_cad_set_device 7 6 1 0
+[  302.655291] [audmgr.c:process_audmgr_callback] rpc DEVICE_INFO
+[  303.314821] BATT: msm_battery_update_psy_status
+[  303.316973] BATT: received, 2, 0, 0x0; 0, 4102, 91, 250; 0, 0, 0
+[  304.490991] [audpp.c:audpp_dsp_event] DISABLE
+[  304.491151] [audpp.c:audpp_disable] Received CFG_MSG_DISABLE from ADSP
+[  304.491243] [adsp.c:msm_adsp_disable] disable 'AUDPPTASK'
+[  304.492996] [adsp.c:msm_adsp_put] closing module AUDPPTASK
+[  304.493114] [audmgr.c:audmgr_disable] session 0xc09b0dc0
+[  304.495383] [audmgr.c:audmgr_rpc_thread] rpc_reply status 0
+[  304.505768] [audmgr.c:process_audmgr_callback] DISABLED
+[  304.507741] PM: suspend entry 2016-09-17 21:47:41.230813306 UTC
+[  304.519413] Freezing user space processes ... (elapsed 0.01 seconds) done.
+[  304.784901] Freezing remaining freezable tasks ... (elapsed 0.02 seconds) done.
+[  304.805719] Suspending console(s) (use no_console_suspend to debug)
+[  304.812464] radio-tavaruatavarua_suspend: radio suspend
+[  304.812488] 
+[  304.825343] PM: suspend of devices complete after 18.371 msecs
+[  304.826173] PM: late suspend of devices complete after 0.785 msecs
+[  304.827513] PM: noirq suspend of devices complete after 1.298 msecs
+[  304.827541] Disabling non-boot CPUs ...
+[  304.833748] Enabling non-boot CPUs ...
+[  304.835026] Switched to NOHz mode on CPU #1
+[  304.836348] CPU1 is up
+[  304.837473] PM: noirq resume of devices complete after 1.081 msecs
+[  304.838889] PM: early resume of devices complete after 0.788 msecs
+[  304.841764] wakeup wake lock: rpcrotuer_smd_xprt
+[  304.842399] radio-tavaruatavarua_resume: radio resume
+[  304.842419] 
+[  304.845494] PM: resume of devices complete after 6.553 msecs
+[  304.846863] Restarting tasks ... done.
+[  304.865563] PM: suspend exit 2016-09-17 21:49:18.022301666 UTC
+[  304.865678] suspend: exit suspend, ret = 0 (2016-09-17 21:49:18.022431666 UTC)
+[  304.865806] active wake lock mmc2_detect
+[  304.865899] active wake lock mmc1_detect
+[  304.865991] active wake lock alarm_rtc, time left 97
+[  305.867191] PM: suspend entry 2016-09-17 21:49:19.023953333 UTC
+[  305.902918] Freezing user space processes ... (elapsed 0.01 seconds) done.
+[  306.164779] Freezing remaining freezable tasks ... (elapsed 0.02 seconds) done.
+[  306.185166] Suspending console(s) (use no_console_suspend to debug)
+[  306.188374] radio-tavaruatavarua_suspend: radio suspend
+[  306.188383] 
+[  306.200794] PM: suspend of devices complete after 15.081 msecs
+[  306.201166] PM: late suspend of devices complete after 0.353 msecs
+[  306.201713] PM: noirq suspend of devices complete after 0.531 msecs
+[  306.201723] Disabling non-boot CPUs ...
+[  306.203621] wakeup wake lock: rpcrotuer_smd_xprt
+[  306.203851] Enabling non-boot CPUs ...
+[  306.204751] Switched to NOHz mode on CPU #1
+[  306.204829] CPU1 is up
+[  306.205433] PM: noirq resume of devices complete after 0.586 msecs
+[  306.206113] PM: early resume of devices complete after 0.375 msecs
+[  306.207821] radio-tavaruatavarua_resume: radio resume
+[  306.207828] 
+[  306.209049] PM: resume of devices complete after 2.916 msecs
+[  306.209593] Restarting tasks ... done.
+[  306.217533] PM: suspend exit 2016-09-17 21:50:07.009468333 UTC
+[  306.217576] suspend: exit suspend, ret = 0 (2016-09-17 21:50:07.009518333 UTC)
+[  306.217616] active wake lock mmc2_detect
+[  306.217636] active wake lock mmc1_detect
+[  306.217654] active wake lock PowerManagerService.WakeLocks
+[  306.217678] active wake lock KeyEvents
+[  306.250766] request_suspend_state: wakeup (3->0) at 306256036637 (2016-09-17 21:50:07.042691666 UTC)
+[  306.250821] request_suspend_state: goto late resume.state 2
+[  306.250869] request_suspend_state: end of function. new_state 0, old_state 1, requested_suspend_state 0
+[  306.250936] late_resume: state 2
+[  306.276018] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  306.276031] failed to request gpio_disp_pwr
+[  306.278684] mipi_novatek_nt35516_qhd_lcd_on: E
+[  306.278706] mipi_novatek_nt35516_qhd_lcd_on: display on cmd mode 
+[  306.424861] mipi_novatek_nt35516_qhd_lcd_on: X
+[  306.467761] [elan] elan_ktf2k_ts_resume: enter
+[  306.504994] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  306.505064] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.505228] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  306.505311] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.505346] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  306.505366] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  306.525159] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  306.525319] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.525513] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  306.525584] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.525631] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  306.525666] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  306.537783] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  306.537823] init: Starting service 'rmt_oeminfo'...
+[  306.545156] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  306.545273] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.545456] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:75
+[  306.545549] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.545609] ekt2132 1-0015: [elan]elan_ktf2k_ts_get_data: i2c_master_send failed
+[  306.545648] [elan] elan_ktf2k_ts_resume: wake up tp failed! err = -22
+[  306.556896] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  306.557006] init: Starting service 'geomagneticd'...
+[  306.568716] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[  306.571084] qup_i2c qup_i2c.1: I2C slave addr:0x15 not connected
+[  306.590806] init: Service 'geomagneticd' (pid 3986) exited with status 1
+[  306.590886] init: Service 'geomagneticd' (pid 3986) killing any children in process group
+[  306.615273] ------------[ cut here ]------------
+[  306.615323] WARNING: at kernel/irq/manage.c:428 enable_irq+0x60/0x70()
+[  306.615349] Unbalanced enable for IRQ 304
+[  306.615368] Modules linked in:
+[  306.615429] [<c0015108>] (unwind_backtrace+0x0/0x11c) from [<c009991c>] (warn_slowpath_common+0x4c/0x64)
+[  306.615483] [<c009991c>] (warn_slowpath_common+0x4c/0x64) from [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c)
+[  306.615531] [<c00999b4>] (warn_slowpath_fmt+0x2c/0x3c) from [<c00f6a74>] (enable_irq+0x60/0x70)
+[  306.615579] [<c00f6a74>] (enable_irq+0x60/0x70) from [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0)
+[  306.615629] [<c060b580>] (elan_ktf2k_ts_resume.part.3+0xd8/0xf0) from [<c00d0880>] (late_resume+0xdc/0x140)
+[  306.615679] [<c00d0880>] (late_resume+0xdc/0x140) from [<c00b1e78>] (process_one_work+0x23c/0x444)
+[  306.615728] [<c00b1e78>] (process_one_work+0x23c/0x444) from [<c00b224c>] (worker_thread+0x1a0/0x2c4)
+[  306.615776] [<c00b224c>] (worker_thread+0x1a0/0x2c4) from [<c00b69a8>] (kthread+0x80/0x90)
+[  306.615823] [<c00b69a8>] (kthread+0x80/0x90) from [<c000f3f4>] (kernel_thread_exit+0x0/0x8)
+[  306.615861] ---[ end trace 1ddfecaf7060e2ca ]---
+[  306.616669] PM: late resume of devices complete after 365.726 msecs
+[  306.851561] init: Service 'rmt_oeminfo' (pid 3985) exited with status 255
+[  306.851666] init: Service 'rmt_oeminfo' (pid 3985) killing any children in process group
+[  308.642151] msm_otg_resume: usb exited from low power mode
+[  308.645063] BATT: msm_battery_cb_func
+[  308.645183] BATT: msm_battery_update_psy_status
+[  308.647088] BATT: received, 0, 2, 0x37; 0, 4195, 91, 250; 1, 0, 0
+[  308.647128] BATT: start charging
+[  308.647153] BATT: unknown charger inserted
+[  308.647179] BATT: charger type changed
+[  308.647201] BATT: unknown charger inserted
+[  308.651693] type=1400 audit(1474149009.430:105): avc: denied { read } for pid=3250 comm="mpdecision" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  308.654354] healthd: unknown: Unknown power supply type
+[  308.686399] BATT: msm_battery_cb_func
+[  308.686454] BATT: msm_battery_update_psy_status
+[  308.688053] BATT: received, 0, 2, 0x137; 0, 4195, 91, 250; 1, 0, 0
+[  308.690713] healthd: unknown: Unknown power supply type
+[  308.865858] android_work: android_work: did not send uevent (0 0   (null))
+[  308.992898] 
+[  308.992906] Charger Type: STD DOWNSTREAM PORT
+[  309.103583] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[  309.237966] android_usb gadget: high-speed config #1: android
+[  309.242246] BATT: msm_battery_cb_func
+[  309.242298] BATT: msm_battery_update_psy_status
+[  309.243111] BATT: received, 0, 0, 0x171; 0, 4195, 91, 250; 1, 0, 0
+[  309.243124] BATT: charger type changed
+[  309.243133] BATT: usb pc charger inserted
+[  309.295044] android_work: android_work: sent uevent USB_STATE=CONFIGURED
+[  309.352096] BATT: msm_battery_cb_func
+[  309.352131] BATT: msm_battery_update_psy_status
+[  309.525598] mtp_open
+[  311.051394] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  311.051519] init: Starting service 'rmt_oeminfo'...
+[  311.057469] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  311.057498] init: Starting service 'geomagneticd'...
+[  311.064506] init: Service 'geomagneticd' (pid 4033) exited with status 1
+[  311.064544] init: Service 'geomagneticd' (pid 4033) killing any children in process group
+[  311.110889] init: Service 'rmt_oeminfo' (pid 4032) exited with status 255
+[  311.110991] init: Service 'rmt_oeminfo' (pid 4032) killing any children in process group
+[  313.334881] BATT: msm_battery_update_psy_status
+[  313.335701] BATT: received, 0, 0, 0x171; 0, 4064, 91, 250; 1, 0, 0
+[  316.112851] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  316.112956] init: Starting service 'rmt_oeminfo'...
+[  316.116208] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  316.116293] init: Starting service 'geomagneticd'...
+[  316.127733] init: Service 'geomagneticd' (pid 4046) exited with status 1
+[  316.127973] init: Service 'geomagneticd' (pid 4046) killing any children in process group
+[  316.177511] init: Service 'rmt_oeminfo' (pid 4045) exited with status 255
+[  316.177549] init: Service 'rmt_oeminfo' (pid 4045) killing any children in process group
+[  319.720923] request_suspend_state: sleep (0->3) at 319726186637 (2016-09-17 21:50:20.512841666 UTC)
+[  319.720996] request_suspend_state: goto late resume.state 1
+[  319.721054] request_suspend_state: end of function. new_state 3, old_state 0, requested_suspend_state 3
+[  319.721126] early_suspend: state 1
+[  319.721158] [elan] elan_ktf2k_ts_suspend: enter
+[  319.745041] mipi_novatek_nt35516_qhd_lcd_off: E
+[  319.894794] mipi_novatek_nt35516_qhd_lcd_off: X
+[  319.896304] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[  319.896324] failed to request gpio_disp_pwr
+[  319.896428] PM: early suspend of devices complete after 175.295 msecs
+[  321.178983] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  321.179168] init: Starting service 'rmt_oeminfo'...
+[  321.181793] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  321.182018] init: Starting service 'geomagneticd'...
+[  321.189006] init: Service 'geomagneticd' (pid 4049) exited with status 1
+[  321.189203] init: Service 'geomagneticd' (pid 4049) killing any children in process group
+[  321.225656] init: Service 'rmt_oeminfo' (pid 4048) exited with status 255
+[  321.225724] init: Service 'rmt_oeminfo' (pid 4048) killing any children in process group
+[  323.354828] BATT: msm_battery_update_psy_status
+[  323.355888] BATT: received, 0, 0, 0x171; 0, 4134, 91, 250; 1, 0, 0
+[  326.227058] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[  326.227244] init: Starting service 'rmt_oeminfo'...
+[  326.229946] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[  326.230146] init: Starting service 'geomagneticd'...
+[  326.239054] init: Service 'geomagneticd' (pid 4051) exited with status 1
+[  326.239249] init: Service 'geomagneticd' (pid 4051) killing any children in process group
+[  326.280063] init: Service 'rmt_oeminfo' (pid 4050) exited with status 255
+[  326.280134] init: Service 'rmt_oeminfo' (pid 4050) killing any children in process group
